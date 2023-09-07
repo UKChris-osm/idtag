@@ -7,12 +7,14 @@
         "access_simple",
         "fee",
         "payment_multi_fee",
-        "charge_fee"
+        "charge_fee",
+        "ref"
     ],
     "moreFields": [
         "covered",
         "level",
         "manufacturer",
+        "maxstay",
         "network"
     ],
     "geometry": [

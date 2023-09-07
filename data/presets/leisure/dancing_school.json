@@ -9,13 +9,7 @@
         "dance/style"
     ],
     "moreFields": [
-        "email",
-        "fax",
-        "gnis/feature_id-US",
-        "level",
-        "opening_hours/covid19",
-        "payment_multi",
-        "phone"
+        "{@templates/poi}"
     ],
     "geometry": [
         "point",
@@ -29,12 +23,10 @@
         "dance teaching"
     ],
     "tags": {
-        "leisure": "dance",
-        "dance:teaching": "yes"
+        "amenity": "dancing_school"
     },
-    "reference": {
-        "key": "leisure",
-        "value": "dance"
-    },
-    "name": "Dance School"
+    "name": "Dance School",
+    "aliases": [
+        "Dance Studio"
+    ]
 }

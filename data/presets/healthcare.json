@@ -11,16 +11,14 @@
         "website"
     ],
     "moreFields": [
+        "{@templates/contact}",
         "branch_brand",
         "brand",
         "building/levels_building",
-        "email",
-        "fax",
         "gnis/feature_id-US",
         "height_building",
         "level",
         "opening_hours",
-        "opening_hours/covid19",
         "payment_multi",
         "wheelchair"
     ],

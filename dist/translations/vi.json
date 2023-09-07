@@ -161,20 +161,17 @@
                         "housenumber": "123",
                         "housenumber!jp": "Số Nhà",
                         "neighbourhood": "Xóm/Phó khu",
-                        "neighbourhood!jp": "Khu phố/Phân khu",
                         "place": "Địa phương",
                         "postcode": "Mã bưu chính",
                         "province": "Tỉnh",
                         "province!cn": "Tỉnh/TPTTTW/Khu tự trị/ĐKHC",
                         "province!jp": "Tỉnh",
                         "quarter": "Khu",
-                        "quarter!jp": "Khu phố/Thị trấn",
                         "state": "Tiểu bang",
                         "street": "Đường",
                         "subdistrict": "Phường/xã/thị trấn",
                         "subdistrict!vn": "Phường/Xã/Thị trấn",
                         "suburb": "Khu phố",
-                        "suburb!jp": "Quận",
                         "unit": "Số Phòng"
                     },
                     "terms": "địa chỉ,số địa chỉ,số nhà,số tòa nhà,số toà nhà,dia chi,so dia chi,so nha,so toa nha"
@@ -1238,8 +1235,7 @@
                         "critical": "Rất Khó: Chỉ có những ngựa và người cưỡi ngựa có nhiều khả năng có thể qua lại. Có trở ngại lớn. Cần phải xem xét kỹ càng các cầu.",
                         "dangerous": "Nguy hiểm: Chỉ có những ngựa và người cưỡi ngựa có rất nhiều khả năng có thể qua lại được khi trời đẹp. Nên xuống ngựa.",
                         "demanding": "Xấu: Lối gồ ghề, đôi khi có quãng khó đi qua.",
-                        "difficult": "Khó: Lối hẹp có thể có trở ngại làm dễ bị té.",
-                        "impossible": "Hiểm nghèo: Ngựa không qua được lối hoặc cầu quá hẹp, thiếu cột chống, có trở ngại như thang."
+                        "difficult": "Khó: Lối hẹp có thể có trở ngại làm dễ bị té."
                     },
                     "placeholder": "Khó, Nguy hiểm, …"
                 },
@@ -1492,10 +1488,6 @@
                     "label": "Tuổi Tối đa",
                     "terms": "tuổi tối đa,giới hạn tuổi,tuoi toi da,gioi han tuoi"
                 },
-                "maxheight": {
-                    "label": "Chiều cao Tối đa",
-                    "terms": "chiều cao tối đa,giới hạn chiều cao,bề cao tối đa,giới hạn bề cao,chieu cao toi da,gioi han chieu cao,be cao toi da,gioi han be cao"
-                },
                 "maxspeed": {
                     "label": "Tốc độ Tối đa",
                     "placeholder": "40, 50, 60, …",
@@ -1510,17 +1502,6 @@
                     "label": "Tốc độ Tối đa Xe tải",
                     "placeholder": "40, 50, 60, …",
                     "terms": "tốc độ tối đa xe tải,giới hạn tốc độ xe tải,toc do toi da xe tai,gioi han toc do xe tai"
-                },
-                "maxstay": {
-                    "label": "Thời gian Ở Tối đa"
-                },
-                "maxweight": {
-                    "label": "Trọng lượng Tối đa",
-                    "terms": "trọng lượng tối đa,cân nặng tối đa,giới hạn trọng lượng,trong luong toi da,can nang toi da,gioi han trong luong"
-                },
-                "maxwidth": {
-                    "label": "Chiều rộng Tối đa",
-                    "terms": "chiều rộng tối đa,bề rộng tối đa,giới hạn chiều rộng,giới hạn bề rộng,chieu rong toi da,be rong toi da,gioi han chieu rong,gioi han be rong"
                 },
                 "memorial": {
                     "label": "Kiểu"
@@ -1683,10 +1664,6 @@
                     "placeholder": "Không rõ",
                     "terms": "giờ mở cửa,giờ giấc mở cửa,gio mo cua,gio giac mo cua"
                 },
-                "opening_hours/covid19": {
-                    "label": "Giờ Mở cửa trong Đại dịch COVID-19",
-                    "terms": "giờ mở cửa trong đại dịch covid-19,giờ mở cửa trong thời kỳ covid-19,giờ mở cửa trong thời kì covid-19,giờ mở cửa do virus corona,giờ mở cửa do vi-rút corona,giờ mở cửa do virut corona,giờ mở cửa do coronavirus,giờ mở cửa do siêu vi corona,giờ mở cửa do siêu vi khuẩn corona,giờ mở cửa do cô vi,covid-19,virus corona,vi-rút corona,virut corona,coronavirus,siêu vi corona,siêu vi khuẩn corona,sars-cov-2,cô vi,gio mo cua trong dai dich covid-19,gio mo cua trong thoi ky covid-19,gio mo cua trong thoi ki covid-19,gio mo cua do virus corona,gio mo cua do vi-rut corona,gio mo cua do sieu vi corona,gio mo cua do sieu vi khuan corona,gio mo cua do co vi,vi-rut corona,sieu vi corona,sieu vi khuan corona,co vi"
-                },
                 "operator": {
                     "label": "Tổ chức Chủ quản",
                     "terms": "tổ chức chủ quản,cơ quan chủ quản,nhà chủ quản,tổ chức quản lý,tổ chức quản lí,cơ quan quản lý,cơ quan quản lí,nhà quản lý,nhà quản lí,tổ chức hoạt động,cơ quan hoạt động,nhà hoạt động,to chuc chu quan,co quan chu quan,nha chu quan,to chuc quan ly,to chuc quan li,co quan quan ly,co quan quan li,nha quan ly,nha quan li,to chuc hoat dong,co quan hoat dong,nha hoat dong"
@@ -1738,14 +1715,6 @@
                         "street_side": "Dọc đường",
                         "surface": "Ngoài trời",
                         "underground": "Ngầm"
-                    }
-                },
-                "parking/orientation": {
-                    "label": "Hướng",
-                    "options": {
-                        "diagonal": "Chéo với Lòng đường",
-                        "parallel": "Song song với Lòng đường",
-                        "perpendicular": "Thẳng góc với Lòng đường"
                     }
                 },
                 "parking_entrance": {
@@ -2359,44 +2328,6 @@
                 },
                 "sport": {
                     "label": "Môn Thể thao"
-                },
-                "sport_ice": {
-                    "label": "Môn Thể thao",
-                    "options": {
-                        "curling": "Bi đá trên Băng",
-                        "ice_hockey": "Khúc côn cầu trên Băng",
-                        "ice_skating": "Trượt băng",
-                        "ice_stock": "Bi đá trên Băng Bayern",
-                        "multi": "Đa môn"
-                    }
-                },
-                "sport_pub": {
-                    "label": "Môn Thể thao",
-                    "options": {
-                        "billiards": "Bi-a",
-                        "darts": "Phóng Phi tiêu",
-                        "table_soccer": "Bi lắc"
-                    },
-                    "terms": "môn thể thao,thể thao,trò chơi,mon the thao,the thao,tro choi"
-                },
-                "sport_racing_motor": {
-                    "label": "Môn Thể thao",
-                    "options": {
-                        "karting": "Đua xe Go-kart",
-                        "motocross": "Motocross",
-                        "motor": "Đua xe có Động cơ",
-                        "speedway": "Speedway"
-                    }
-                },
-                "sport_racing_nonmotor": {
-                    "label": "Môn Thể thao",
-                    "options": {
-                        "bmx": "Đua Xe đạp BMX",
-                        "cycling": "Đua Xe đạp",
-                        "dog_racing": "Đua Chó",
-                        "horse_racing": "Đua Ngựa",
-                        "running": "Chạy Đua"
-                    }
                 },
                 "stars": {
                     "label": "Số Sao"
@@ -3250,10 +3181,6 @@
                     "name": "Bác sĩ",
                     "terms": "văn phòng bác sĩ,văn phòng bác sỹ,văn phòng thầy thuốc,van phong bac si,van phong bac sy,van phong thay thuoc"
                 },
-                "amenity/doctors/gynaecology": {
-                    "name": "Bác sĩ Phụ khoa",
-                    "terms": "bác sĩ phụ khoa,bác sỹ phụ khoa,thầy thuốc phụ khoa,nhà phụ khoa học,phụ khoa,bac si phu khoa,bac sy phu khoa,thay thuoc phu khoa,nha phu khoa hoc,phu khoa"
-                },
                 "amenity/dojo": {
                     "name": "Võ đường",
                     "terms": "võ đường,trường võ thuật,phòng tập võ thuật,võ thuật,karate,judo,nhu đạo,vo duong,truong vo thuat,phong tap vo thuat,vo thuat,nhu dao"
@@ -3390,10 +3317,6 @@
                 "amenity/kindergarten": {
                     "name": "Sân Nhà trẻ",
                     "terms": "sân nhà trẻ,sân nhà giữ trẻ,sân trường mẫu giáo,sân trường mầm non,san nha tre,san nha giu tre,san truong mau giao,san truong mam non"
-                },
-                "amenity/kneipp_water_cure": {
-                    "name": "Bồn tắm Trị liệu Kneipp",
-                    "terms": "bồn tắm trị liệu kneipp,bồn tắm kneipp,bon tam tri lieu kneipp,bon tam kneipp"
                 },
                 "amenity/language_school": {
                     "name": "Trường học Ngoại ngữ",
@@ -3613,10 +3536,6 @@
                     "name": "Nhà máy Tái chế",
                     "terms": "nhà máy tái chế,trung tâm tái chế,trung tâm thu hồi,trạm tái chế,nha may tai che,trung tam tai che,trung tam thu hoi,tram tai che"
                 },
-                "amenity/recycling_container": {
-                    "name": "Thùng Tái chế",
-                    "terms": "thùng tái chế,thùng thu hồi,thung tai che,thung thu hoi"
-                },
                 "amenity/refugee_site": {
                     "name": "Trại Tị nạn",
                     "terms": "trại tị nạn,trại tỵ nạn,trai ti nan,trai ty nan"
@@ -3636,10 +3555,6 @@
                 "amenity/restaurant/asian": {
                     "name": "Nhà hàng châu Á",
                     "terms": "nhà hàng châu á,nhà hàng á châu,quán ăn châu á,quán ăn á châu,tiệm ăn châu á,tiệm ăn á châu,tiệm châu á,tiệm á châu,nhà ăn châu á,nhà ăn á châu,phòng ăn châu á,phòng ăn á châu,nhà hàng đồ châu á,nhà hàng đồ á châu,quán ăn đồ châu á,quán ăn đồ á châu,tiệm ăn đồ châu á,tiệm ăn đồ á châu,tiệm đồ châu á,tiệm đồ á châu,nhà ăn đồ châu á,nhà ăn đồ á châu,phòng ăn đồ châu á,phòng ăn đồ á châu,tiệm lẩu,lau,nha hang chau a,nha hang a chau,quan an chau a,quan an a chau,tiem an chau a,tiem an a chau,tiem chau a,tiem a chau,nha an chau a,nha an a chau,phong an chau a,phong an a chau,nha hang do chau a,nha hang do a chau,quan an do chau a,quan an do a chau,tiem an do chau a,tiem an do a chau,tiem do chau a,tiem do a chau,nha an do chau a,nha an do a chau,phong an do chau a,phong an do a chau,tiem lau"
-                },
-                "amenity/restaurant/barbeque": {
-                    "name": "Nhà hàng Thịt nướng",
-                    "terms": "nhà hàng thịt nướng,nhà hàng bbq,nhà hàng barbecue,quán ăn thịt nướng,quán ăn bbq,quán ăn barbecue,nha hang thit nuong,nha hang bbq,nha hang barbecue,quan an thit nuong,quan an bbq,quan an barbecue"
                 },
                 "amenity/restaurant/chinese": {
                     "name": "Nhà hàng Trung Quốc",
@@ -3949,10 +3864,6 @@
                     "name": "Thùng Đựng Cứt Chó",
                     "terms": "thùng đựng cứt chó,hộp đựng cứt chó,thung dung cut cho,hop dung cut cho"
                 },
-                "amenity/waste_basket": {
-                    "name": "Thùng rác",
-                    "terms": "thùng rác,sọt rác,thung rac,sot rac"
-                },
                 "amenity/waste_disposal": {
                     "name": "Thùng Rác Lớn",
                     "terms": "thùng rác lớn,thùng rác công nghiệp,thung rac lon,thung rac cong nghiep"
@@ -4141,9 +4052,6 @@
                 "barrier/kissing_gate": {
                     "name": "Cửa Hàng rào Chắn Trâu bò",
                     "terms": "cửa hàng rào chắn trâu bò,cua hang rao chan trau bo"
-                },
-                "barrier/log": {
-                    "name": "Cây Đổ"
                 },
                 "barrier/motorcycle_barrier": {
                     "name": "Chướng ngại Xe máy",
@@ -4410,10 +4318,6 @@
                 "building/temple": {
                     "name": "Kiến trúc Đền thờ",
                     "terms": "kiến trúc đền thờ,kiến trúc chùa,kiến trúc đạo quán,kiến trúc chùa chiền,kiến trúc cung quán,kien truc den tho,kien truc chua,kien truc dao quan,kien truc chua chien,kien truc cung quan"
-                },
-                "building/terrace": {
-                    "name": "Dãy Nhà",
-                    "terms": "dãy nhà,day nha"
                 },
                 "building/train_station": {
                     "name": "Nhà ga"
@@ -4756,6 +4660,14 @@
                     "name": "Còi Báo động",
                     "terms": "còi báo động,còi báo,còi tầm,còi hú,coi bao dong,coi bao,coi tam,coi hu"
                 },
+                "emergency/water_reservoir": {
+                    "name": "Hồ Chứa Nước Cứu hỏa",
+                    "terms": "hồ chứa nước cứu hỏa,hồ chứa nước cứu hoả,hồ chứa nước chữa cháy,hồ chứa nước phòng cháy,ho chua nuoc cuu hoa,ho chua nuoc chua chay,ho chua nuoc phong chay"
+                },
+                "emergency/water_reservoir_covered": {
+                    "name": "Hồ Chứa Nước Cứu hỏa Ngầm",
+                    "terms": "hồ chứa nước cứu hỏa ngầm,hồ chứa nước cứu hoả ngầm,hồ chứa nước chữa cháy ngầm,hồ chứa nước phòng cháy ngầm,ho chua nuoc cuu hoa ngam,ho chua nuoc chua chay ngam,ho chua nuoc phong chay ngam"
+                },
                 "emergency/water_tank": {
                     "name": "Bể nước Cứu hỏa",
                     "terms": "bể nước cứu hỏa,thùng nước cứu hỏa,bể nước cứu hoả,thùng nước cứu hoả,bể nước chữa cháy,thùng nước chữa cháy,bể nước phòng cháy,thùng nước phòng cháy,be nuoc cuu hoa,thung nuoc cuu hoa,be nuoc chua chay,thung nuoc chua chay,be nuoc phong chay,thung nuoc phong chay"
@@ -5060,8 +4972,8 @@
                     "terms": "đường đua xe hơi,đường đua ô tô,đường đua ô-tô,đường đua ôtô,đường đua xe máy,trường đua xe hơi,trường đua ô tô,trường đua ô-tô,trường đua ôtô,trường đua xe máy,duong dua xe,truong dua xe,duong dua xe hoi,duong dua o to,duong dua o-to,duong dua oto,duong dua xe may,truong dua xe hoi,truong dua o to,truong dua o-to,truong dua oto,truong dua xe may"
                 },
                 "highway/residential": {
-                    "name": "Ngõ Dân cư",
-                    "terms": "ngõ dân cư,ngõ dân sinh,ngõ,đường dân cư,dân cư,đường dân sinh,dân sinh,kiệt,ngo dan cu,ngo dan sinh,ngo,duong dan cu,dan cu,duong dan sinh,dan sinh,kiet"
+                    "name": "Đường Nhỏ Dân cư",
+                    "terms": "đường nhỏ dân cư,đường nhỏ dân sinh,đường nhỏ,đường dân cư,dân cư,đường dân sinh,dân sinh,duong nho dan cu,duong nho dan sinh,duong nho,duong dan cu,dan cu,duong dan sinh,dan sinh"
                 },
                 "highway/rest_area": {
                     "name": "Trạm Dừng Nghỉ",
@@ -5180,8 +5092,8 @@
                     "terms": "bùng binh ở đường cùng,bùng binh ở cuối đường,bùng binh ở ngõ cụt,đường vòng ở đường cùng,đường vòng ở cuối đường,đường vòng ở ngõ cụt,bung binh o duong cung,bung binh o cuoi duong,bung binh o ngo cut,duong vong o duong cung,duong vong o cuoi duong,duong vong o ngo cut"
                 },
                 "highway/unclassified": {
-                    "name": "Ngõ",
-                    "terms": "ngõ,kiệt,ngo,kiet"
+                    "name": "Đường Nhỏ",
+                    "terms": "đường nhỏ"
                 },
                 "historic": {
                     "name": "Nơi Lịch sử",
@@ -5412,10 +5324,6 @@
                 "landuse/military/base/navy": {
                     "name": "Căn cứ Hải quân",
                     "terms": "căn cứ hải quân,can cu hai quan"
-                },
-                "landuse/military/danger_area": {
-                    "name": "Khu vực Nguy hiểm",
-                    "terms": "khu vực nguy hiểm,vùng nguy hiểm,khu vuc nguy hiem,vung nguy hiem"
                 },
                 "landuse/military/obstacle_course": {
                     "name": "Đường Chạy vượt Chướng ngại vật Quân sự",
@@ -5704,10 +5612,6 @@
                 "leisure/pitch/cricket": {
                     "name": "Sân Bóng gậy",
                     "terms": "sân bóng gậy,sân cỏ bóng gậy,sân cỏ crikê,sân cỏ crích-kê,sân cỏ cricket,san bong gay,san co bong gay,san go crike,san co crich-ke,san co cricket"
-                },
-                "leisure/pitch/equestrian": {
-                    "name": "Sân Cưỡi ngựa",
-                    "terms": "sân cưỡi ngựa,câu lạc bộ cưỡi ngựa,clb cưỡi ngựa,câu lạc bộ ngựa,clb ngựa,san cuoi ngua,cau lac bo cuoi ngua,clb cuoi ngua,cau lac bo ngua,clb ngua"
                 },
                 "leisure/pitch/field_hockey": {
                     "name": "Sân cỏ Khúc côn cầu",
@@ -7636,10 +7540,6 @@
                 "shop/pet": {
                     "name": "Tiệm Vật nuôi",
                     "terms": "tiệm bán vật nuôi,tiệm bán đồ nuôi thú vật,cửa hàng vật nuôi,cửa hiệu thú vật,đồ ăn thú vật,chó,mèo,tiem ban vat nuoi,tiem ban do nuoi thu vat,cua hang vat nuoi,cua hieu thu vat,do an thu vat,cho,meo"
-                },
-                "shop/pet_grooming": {
-                    "name": "Dịch vụ Tỉa lông",
-                    "terms": "dịch vụ tỉa lông,tỉa lông thú cưng,tỉa lông chó,tỉa lông mèo,tỉa lông ngựa,dich vu tia long,tia long thu cung,tia long cho,tia long meo,tia long ngua"
                 },
                 "shop/photo": {
                     "name": "Tiệm Chụp Hình",

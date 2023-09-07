@@ -113,8 +113,12 @@
                     "label": "Dopušten pristup",
                     "options": {
                         "customers": "Samo mušterije",
+                        "no": "Nedozvoljeno",
                         "permissive": "Dopuštenje",
-                        "permit": "Samo s dozvolom"
+                        "permit": "Samo s dozvolom",
+                        "private": "Privatno",
+                        "unknown": "Nepoznato",
+                        "yes": "Javno"
                     },
                     "terms": "dopušten pristup,dopuštenje,pristup"
                 },
@@ -229,7 +233,18 @@
                     "label": "Umjetnik"
                 },
                 "artwork_type": {
-                    "label": "Vrsta"
+                    "label": "Vrsta",
+                    "options": {
+                        "bust": "Bista",
+                        "graffiti": "Grafiti",
+                        "installation": "Umjetnička instalacija",
+                        "mosaic": "Mozaik",
+                        "mural": "Mural",
+                        "painting": "Slika",
+                        "relief": "Reljef",
+                        "sculpture": "Skulptura",
+                        "statue": "Kip"
+                    }
                 },
                 "ascent": {
                     "terms": "ukupna uzbrdica,uzbrdica"
@@ -257,7 +272,20 @@
                     "terms": "birtija,kafić,bar"
                 },
                 "barrier": {
-                    "label": "Vrsta"
+                    "label": "Vrsta",
+                    "options": {
+                        "bollard": "Stupić",
+                        "chain": "Lanac",
+                        "city_wall": "Gradske zidine",
+                        "fence": "Ograda",
+                        "gate": "Kapija",
+                        "hedge": "Živica",
+                        "kerb": "Rubnjak",
+                        "lift_gate": "Rampa",
+                        "retaining_wall": "Potporni zid",
+                        "swing_gate": "Zakretna rampa",
+                        "wall": "Zid"
+                    }
                 },
                 "bath/open_air": {
                     "label": "Vanjsko kupalište"
@@ -265,12 +293,26 @@
                 "bath/sand_bath": {
                     "label": "Pješčano kupalište (Suna Yu)"
                 },
+                "beauty": {
+                    "label": "Usluge",
+                    "options": {
+                        "cosmetics": "Kozmetika",
+                        "hair_removal": "Depilacija",
+                        "nails": "Manikura/pedikura",
+                        "skin_care": "Njega kože",
+                        "tanning": "Solarij",
+                        "waxing": "Depilacija voskom"
+                    }
+                },
                 "bench": {
                     "label": "Klupa",
                     "terms": "klupa"
                 },
                 "bicycle_parking": {
-                    "label": "Vrsta"
+                    "label": "Vrsta",
+                    "options": {
+                        "building": "U zgradi"
+                    }
                 },
                 "bin": {
                     "label": "Kanta za smeće",
@@ -313,9 +355,13 @@
                 },
                 "building": {
                     "label": "Zgrada",
+                    "options": {
+                        "apartments": "Stambena zgrada"
+                    },
                     "terms": "zgrada,građevina"
                 },
                 "building/levels": {
+                    "label": "Broj katova zajedno sa prizemljem",
                     "terms": "razine,katovi"
                 },
                 "building/levels/underground": {
@@ -603,7 +649,13 @@
                     "label": "Hitna pomoć"
                 },
                 "entrance": {
-                    "label": "Vrsta"
+                    "label": "Vrsta",
+                    "options": {
+                        "entrance": "Samo ulaz",
+                        "home": "Kućni ulaz",
+                        "main": "Glavni",
+                        "staircase": "Stubište"
+                    }
                 },
                 "except": {
                     "label": "Iznimke"
@@ -625,7 +677,7 @@
                 },
                 "fire_hydrant/type": {
                     "options": {
-                        "pillar": "Stub/nadzemni",
+                        "pillar": "Stup/nadzemni",
                         "underground": "Podzemni",
                         "wall": "Zid"
                     }
@@ -718,6 +770,11 @@
                 },
                 "historic/wreck/visible_at_low_tide": {
                     "label": "Vidljivo kod oseke"
+                },
+                "holding_position/type": {
+                    "options": {
+                        "runway": "Uzletno-sletna staza"
+                    }
                 },
                 "hoops": {
                     "label": "Obruči",
@@ -858,6 +915,7 @@
                     "terms": "razina,kat"
                 },
                 "level_semi": {
+                    "label": "Kat",
                     "terms": "razine,katovi"
                 },
                 "lifeguard": {
@@ -925,10 +983,6 @@
                 "max_age": {
                     "terms": "maksimalna starost"
                 },
-                "maxheight": {
-                    "label": "Max visina",
-                    "terms": "maksimalna visina"
-                },
                 "maxspeed": {
                     "label": "Ograničenje brzine",
                     "placeholder": "40, 50, 60...",
@@ -936,14 +990,6 @@
                 },
                 "maxspeed/advisory": {
                     "terms": "predloženo ograničenje brzine"
-                },
-                "maxstay": {
-                    "label": "Maks. ostanak",
-                    "terms": "maksimalno vrijeme zadržavanja"
-                },
-                "maxweight": {
-                    "label": "Najveća dopuštena težina",
-                    "terms": "maksimalna težina"
                 },
                 "memorial": {
                     "options": {
@@ -1082,9 +1128,6 @@
                     "placeholder": "Nepoznato",
                     "terms": "sati"
                 },
-                "opening_hours/covid19": {
-                    "terms": "sati covid-19 pandemije,odobreni sati,korona virus,sars‑cov‑2"
-                },
                 "operator": {
                     "label": "Operator",
                     "terms": "operater"
@@ -1120,17 +1163,6 @@
                         "surface": "Površinski",
                         "underground": "Podzemni"
                     }
-                },
-                "parking/orientation": {
-                    "label": "Orijentacija",
-                    "options": {
-                        "diagonal": "Dijagonalno na ulicu",
-                        "parallel": "Paralelno sa ulicom",
-                        "perpendicular": "Okomito na ulicu"
-                    }
-                },
-                "parking/side/orientation": {
-                    "label": "Orijentacija parkiranja"
                 },
                 "payment_multi": {
                     "label": "Načini plaćanja",
@@ -1428,15 +1460,6 @@
                         "handball": "Rukomet"
                     }
                 },
-                "sport_ice": {
-                    "label": "Sportovi"
-                },
-                "sport_racing_motor": {
-                    "label": "Sportovi"
-                },
-                "sport_racing_nonmotor": {
-                    "label": "Sportovi"
-                },
                 "stars": {
                     "label": "Zvjezdice",
                     "terms": "ocjene,zvijezde"
@@ -1572,6 +1595,13 @@
                     },
                     "terms": "vrsta korištenja"
                 },
+                "utility": {
+                    "options": {
+                        "gas": "Plin",
+                        "power": "Električna energija",
+                        "telecom": "Telekomunikacije"
+                    }
+                },
                 "vhf": {
                     "terms": "vhf kanal"
                 },
@@ -1654,6 +1684,10 @@
                     "name": "Zračna luka",
                     "terms": "zračna luka,aerodrom"
                 },
+                "aeroway/apron": {
+                    "name": "Stajanka za parkiranje zrakoplova",
+                    "terms": "platforma"
+                },
                 "aeroway/hangar": {
                     "name": "Hangar",
                     "terms": "hangar,garaža za avione,garaža za zrakoplove"
@@ -1662,9 +1696,16 @@
                     "name": "Heliodrom",
                     "terms": "uzletište za helikopter,sletište za helikopter,pista za helikoptere,helikopter"
                 },
+                "aeroway/holding_position": {
+                    "name": "Pozicija za čekanje",
+                    "terms": "površina za čekanje"
+                },
+                "aeroway/parking_position": {
+                    "name": "Parkirna pozicija za zrakoplov"
+                },
                 "aeroway/runway": {
                     "name": "Uzletno-sletna staza",
-                    "terms": "pista,uzletna staza,sletna staza,avionska pista,zrakoplovna pista"
+                    "terms": "pista,uzletna staza,sletna staza,avionska pista,zrakoplovna pista,staza za uzlijetanje i slijetanje"
                 },
                 "aeroway/taxiway": {
                     "name": "Rulnica",
@@ -1893,9 +1934,6 @@
                 "amenity/recycling_centre": {
                     "name": "Centar za reciklažu"
                 },
-                "amenity/recycling_container": {
-                    "name": "Kontejner za reciklažu"
-                },
                 "amenity/restaurant": {
                     "name": "Restoran",
                     "terms": "restoran,buffet,zdravljak,zalogajnica"
@@ -2037,10 +2075,6 @@
                 "amenity/waste/dog_excrement": {
                     "name": "Košara za pseći izmet"
                 },
-                "amenity/waste_basket": {
-                    "name": "Kanta za smeće",
-                    "terms": "smeće,koš za smeće,kanta za smeće"
-                },
                 "amenity/waste_disposal": {
                     "name": "Kontejner za smeće"
                 },
@@ -2136,6 +2170,9 @@
                 "building": {
                     "name": "Građevina",
                     "terms": "zgrada,kuća,građevina,neboder"
+                },
+                "building/apartments": {
+                    "name": "Stambena zgrada"
                 },
                 "building/barn": {
                     "name": "Ambar",
@@ -2233,9 +2270,6 @@
                 },
                 "building/stadium": {
                     "name": "Zgrada stadiona"
-                },
-                "building/terrace": {
-                    "name": "Kuće u nizu"
                 },
                 "building/train_station": {
                     "name": "Zgrada željezničkog kolodvora"
@@ -2410,6 +2444,9 @@
                 "entrance": {
                     "name": "Ulaz / izlaz",
                     "terms": "vrata"
+                },
+                "entrance/main": {
+                    "name": "Glavni ulaz"
                 },
                 "ford": {
                     "name": "Gaz",
@@ -3028,6 +3065,16 @@
                 },
                 "man_made/works": {
                     "name": "Tvornica"
+                },
+                "marker": {
+                    "name": "Oznaka"
+                },
+                "marker/utility": {
+                    "name": "Oznaka infrastrukture",
+                    "terms": "trasirka,kontrolna cijev,lula"
+                },
+                "marker/utility/power": {
+                    "name": "Oznaka električne infrastrukture"
                 },
                 "military/bunker": {
                     "name": "Vojni bunker"

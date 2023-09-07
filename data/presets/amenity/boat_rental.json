@@ -10,14 +10,9 @@
         "charge_fee"
     ],
     "moreFields": [
+        "{@templates/poi}",
         "access_simple",
-        "address",
-        "email",
-        "fax",
-        "opening_hours/covid19",
-        "ref/FR/siret-FR",
-        "phone",
-        "wheelchair"
+        "address"
     ],
     "geometry": [
         "point",

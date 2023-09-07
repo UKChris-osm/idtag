@@ -116,6 +116,10 @@
     "replace": {"shop": "kiosk"}
   },
   {
+    "old": {"amenity": "lifeboat_station"},
+    "replace": {"emergency": "water_rescue"}
+  },
+  {
     "old": {"amenity": "notice_board"},
     "replace": {"advertising": "board"}
   },
@@ -276,10 +280,6 @@
     "replace": {"building": "commercial"}
   },
   {
-    "old": {"building": "constraction"},
-    "replace": {"building": "construction"}
-  },
-  {
     "old": {"building": "convenience"},
     "replace": {"building": "retail"}
   },
@@ -360,10 +360,6 @@
     "replace": {"building": "yes"}
   },
   {
-    "old": {"building": "under constraction"},
-    "replace": {"building": "construction"}
-  },
-  {
     "old": {"building": "under construction"},
     "replace": {"building": "construction"}
   },
@@ -408,10 +404,6 @@
     "replace": {"tourism": "camp_pitch"}
   },
   {
-    "old": {"shop": "clothes", "clothes": "second_hand"},
-    "replace": {"shop": "clothes", "second_hand": "yes"}
-  },
-  {
     "old": {"color": "*"},
     "replace": {"colour": "$1"}
   },
@@ -449,6 +441,18 @@
   {
     "old": {"crossing": "traffic_lights"},
     "replace": {"crossing": "traffic_signals"}
+  },
+  {
+    "old": {"crossing": "no", "highway": "crossing"},
+    "replace": {"crossing": "no"}
+  },
+  {
+    "old": {"cuisine": "barbeque"},
+    "replace": {"cuisine": "barbecue"}
+  },
+  {
+    "old": {"cuisine": "bbq"},
+    "replace": {"cuisine": "barbecue"}
   },
   {
     "old": {"cuisine": "gluten-free"},
@@ -569,6 +573,26 @@
   {
     "old": {"embassy": "embassy"},
     "replace": {"embassy": "yes"}
+  },
+  {
+    "old": {"emergency": "dry_riser_inlet"},
+    "replace": {"emergency": "fire_service_inlet", "fire_mains": "dry"}
+  },
+  {
+    "old": {"emergency": "sprinkler_connection"},
+    "replace": {"emergency": "fire_service_inlet", " fire_sprinkler": "yes"}
+  },
+  {
+    "old": {"emergency": "lifeboat_station"},
+    "replace": {"emergency": "water_rescue"}
+  },
+  {
+    "old": {"emergency": "marine_rescue"},
+    "replace": {"emergency": "water_rescue"}
+  },
+  {
+    "old": {"emergency_service": "air"},
+    "replace": {"emergency": "air_rescue_service"}
   },
   {
     "old": {"entrance": "emergency_exit"},
@@ -1190,6 +1214,14 @@
     "replace": {"parking": "lane"}
   },
   {
+    "old": {"parking:orientation": "*"},
+    "replace": {"orientation": "$1"}
+  },
+  {
+    "old": {"orientation": "orthogonal"},
+    "replace": {"orientation": "perpendicular"}
+  },
+  {
     "old": {"parking:orientation": "orthogonal"},
     "replace": {"parking:orientation": "perpendicular"}
   },
@@ -1378,6 +1410,10 @@
     "replace": {"amenity": "cafe"}
   },
   {
+    "old": {"shop": "clothes", "clothes": "second_hand"},
+    "replace": {"shop": "clothes", "second_hand": "yes"}
+  },
+  {
     "old": {"shop": "consulting"},
     "replace": {"office": "consulting"}
   },
@@ -1443,7 +1479,7 @@
   },
   {
     "old": {"shop": "organic"},
-    "replace": {"shop": "supermarket", "organic": "only"}
+    "replace": {"shop": "yes", "organic": "only"}
   },
   {
     "old": {"shop": "perfume"},
@@ -1580,6 +1616,10 @@
   {
     "old": {"street_cabinet": "telecom"},
     "replace": {"utility": "telecom"}
+  },
+  {
+    "old": {"survey_date": "*"},
+    "replace": {"survey:date": "$1"}
   },
   {
     "old": {"sustenance": "bar"},
@@ -1876,5 +1916,29 @@
   {
     "old": {"cycleway:both": "none"},
     "replace": {"cycleway:both": "no"}
+  },
+  {
+    "old": {"communication": "pole"},
+    "replace": {"man_made": "utility_pole", "utility": "telecom"}
+  },
+  {
+    "old": {"telephone": "pole"},
+    "replace": {"man_made": "utility_pole", "utility": "telecom"}
+  },
+  {
+    "old": {"telecom": "pole"},
+    "replace": {"man_made": "utility_pole", "utility": "telecom"}
+  },
+  {
+    "old": {"pstn": "pole"},
+    "replace": {"man_made": "utility_pole", "utility": "telecom"}
+  },
+  {
+    "old": {"memorial:type": "stolperstein"},
+    "replace": {"memorial": "stolperstein"}
+  },
+  {
+    "old": {"memorial:text": "*"},
+    "replace": {"inscription": "$1"}
   }
 ]

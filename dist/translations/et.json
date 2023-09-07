@@ -53,6 +53,7 @@
                     "label": "Pääs lubatud",
                     "options": {
                         "customers": {
+                            "description": "Ligipääs on lubatud vaid klientidele",
                             "title": "Klientidele"
                         },
                         "designated": {
@@ -79,6 +80,7 @@
                             "description": "Ligipääs on lubatud vaid kehtiva pääsuloa alusel"
                         },
                         "private": {
+                            "description": "Ligipääs on lubatud vaid omaniku loal juhtumhaaval",
                             "title": "Era"
                         },
                         "unknown": {
@@ -112,8 +114,13 @@
                     }
                 },
                 "activity": {
+                    "label": "Tegevus",
                     "options": {
-                        "horse": "Ratsutamine"
+                        "bicycle": "Rattasõit",
+                        "hiking": "Matkamine",
+                        "horse": "Ratsutamine",
+                        "mtb": "Mägirattasõit",
+                        "ski": "Suusatamine"
                     }
                 },
                 "addr/interpolation": {
@@ -135,6 +142,7 @@
                         "county!jp": "Ringkond",
                         "district": "Ringkond",
                         "floor": "Korrus",
+                        "hamlet": "Väike küla",
                         "housename": "Maja nimetus",
                         "housenumber": "123",
                         "housenumber!jp": "Hoone või krundi number",
@@ -151,12 +159,18 @@
                 "admin_level": {
                     "label": "Haldusüksuse järk"
                 },
+                "advertising": {
+                    "label": "Reklaami tüüp"
+                },
                 "aerialway": {
                     "label": "Tüüp"
                 },
                 "aerialway/access": {
+                    "label": "Läbipääs",
                     "options": {
-                        "both": "Mõlemad"
+                        "both": "Mõlemad",
+                        "entry": "Sisenemiseks",
+                        "exit": "Väljumiseks"
                     }
                 },
                 "aerialway/capacity": {
@@ -204,6 +218,24 @@
                 "animal_shelter": {
                     "label": "Loomadele"
                 },
+                "archaeological_site": {
+                    "label": "Archaeologilise objekti tüüp",
+                    "options": {
+                        "baths": "Termid",
+                        "city": "Ajalooline linn",
+                        "crannog": "Keldi veeküla",
+                        "enclosure": "Kerge piirdemüür",
+                        "fortification": "Kindlustusehitis",
+                        "hut_circle": "Rõngasküla",
+                        "megalith": "Megaliit",
+                        "necropolis": "Nekropol",
+                        "petroglyph": "Kaljujoonis",
+                        "roman_circus": "Rooma tsirkus",
+                        "roman_villa": "Rooma villa",
+                        "settlement": "Ajalooline asulakoht",
+                        "tumulus": "Hauaküngas"
+                    }
+                },
                 "architect": {
                     "label": "Arhitekt",
                     "terms": "ehituskunstnik"
@@ -215,10 +247,46 @@
                     "label": "Kunstnik"
                 },
                 "artwork_type": {
-                    "label": "Tüüp"
+                    "label": "Tüüp",
+                    "options": {
+                        "bust": "Büst",
+                        "graffiti": "Grafiti",
+                        "installation": "Kunstiinstallatsioon",
+                        "mosaic": "Mosaiik",
+                        "mural": "Seinamaal",
+                        "painting": "Maal",
+                        "relief": "Bareljeef",
+                        "sculpture": "Skulptuur",
+                        "statue": "Ausammas"
+                    }
                 },
                 "ascent": {
                     "label": "Tõusu kokku"
+                },
+                "athletics_pitch": {
+                    "label": "Väljakuala",
+                    "options": {
+                        "discus_throw": "kettaheide",
+                        "hammer_throw": "vasaraheide",
+                        "high_jump": "kõrgushüpe",
+                        "javelin_throw": "odavise",
+                        "long_jump": "kaugushüpe",
+                        "pole_vault": "teivashüpe",
+                        "shot_put": "kuulitõuge",
+                        "triple_jump": "kolmikhüpe"
+                    }
+                },
+                "athletics_track": {
+                    "label": "Väljakuala",
+                    "options": {
+                        "javelin_throw": "odavise",
+                        "long_jump": "kaugushüpe",
+                        "pole_vault": "teivashüpe",
+                        "running": "jooks",
+                        "sprint": "sprint",
+                        "steeplechase": "takistusjooks",
+                        "triple_jump": "kolmikhüpe"
+                    }
                 },
                 "atm": {
                     "label": "Pangaautomaat"
@@ -253,7 +321,39 @@
                     "terms": "pubi"
                 },
                 "barrier": {
-                    "label": "Tüüp"
+                    "label": "Tüüp",
+                    "options": {
+                        "block": "Kiviplokk",
+                        "bollard": "Piirdetulp",
+                        "cattle_grid": "Karjatara",
+                        "chain": "Kett",
+                        "city_wall": "Linnamüür",
+                        "cycle_barrier": "Jalgratta barjäär",
+                        "ditch": "Kraav",
+                        "entrance": "Läbipääs",
+                        "fence": "Aed",
+                        "gate": "Värav",
+                        "guard_rail": "Põrkepiire",
+                        "hedge": "Hekk",
+                        "height_restrictor": "Kõrgusepiiraja",
+                        "jersey_barrier": "Betoonpiire",
+                        "kerb": "Kõnnitee serv",
+                        "kissing_gate": "Karjavärav",
+                        "lift_gate": "Tõkkepuu",
+                        "retaining_wall": "Tugimüür",
+                        "stile": "Taratrepp",
+                        "swing_gate": "Tiib-tõkkepuu",
+                        "toll_booth": "Teemaksuputka",
+                        "turnstile": "Pöördvärav",
+                        "wall": "Müür"
+                    }
+                },
+                "barrier_planter": {
+                    "label": "Barjäär",
+                    "options": {
+                        "planter": "Jah",
+                        "undefined": "Määratlemata"
+                    }
                 },
                 "basin": {
                     "label": "Tüüp"
@@ -262,7 +362,11 @@
                     "label": "Teenused",
                     "options": {
                         "cosmetics": "Kosmeetiku teenused",
-                        "tanning": "Tehispäevitamine"
+                        "nails": "Maniküür / pediküür",
+                        "skin_care": "Nahahooldus",
+                        "spa": "Päevaspaa",
+                        "tanning": "Tehispäevitamine",
+                        "waxing": "Vahatamine"
                     }
                 },
                 "bench": {
@@ -271,6 +375,14 @@
                 },
                 "bicycle_parking": {
                     "label": "Tüüp"
+                },
+                "bicycle_road": {
+                    "label": "Jalgrattatee",
+                    "options": {
+                        "undefined": "Ei",
+                        "yes": "Jah"
+                    },
+                    "terms": "rattatee"
                 },
                 "bin": {
                     "label": "Prügikast",
@@ -315,6 +427,10 @@
                     "label": "Tüüp",
                     "placeholder": "Vaikimisi"
                 },
+                "bridge/ref": {
+                    "label": "Silla number/tähis",
+                    "terms": "sillanumber"
+                },
                 "bridge/support": {
                     "label": "Tüüp"
                 },
@@ -323,7 +439,72 @@
                 },
                 "building": {
                     "label": "Hoone",
+                    "options": {
+                        "allotment_house": "Aiamajakene",
+                        "apartments": "Kortermaja",
+                        "barn": "Küün",
+                        "boathouse": "Paadimaja",
+                        "bungalow": "Bangalo",
+                        "bunker": "Varjend",
+                        "cabin": "Metsamajake",
+                        "carport": "Auto varjualune",
+                        "cathedral": "Katedraalihoone",
+                        "chapel": "Kabelihoone",
+                        "church": "Kirikuhoone",
+                        "civic": "Üldkasutatav hoone",
+                        "college": "Kolledžihoone",
+                        "commercial": "Ärihoone",
+                        "construction": "Ehitusjärgus hoone",
+                        "cowshed": "Lehmalaut",
+                        "detached": "Eraldiseisev maja",
+                        "dormitory": "Ühiselamu",
+                        "farm": "Talumaja",
+                        "farm_auxiliary": "Taluhoone",
+                        "fire_station": "Tuletõrjedepoo",
+                        "garage": "Garaaž",
+                        "garages": "Garaažid",
+                        "ger": "Jurta",
+                        "grandstand": "Pealtvaatajate tribüün",
+                        "greenhouse": "Kasvuhoone",
+                        "hangar": "Angaar",
+                        "hospital": "Haiglahoone",
+                        "hotel": "Hotellihoone",
+                        "house": "Eramu",
+                        "houseboat": "Paatmaja",
+                        "hut": "Hütt",
+                        "industrial": "Tööstushoone",
+                        "kindergarten": "Lasteaiahoone",
+                        "manufacture": "Tootmishoone",
+                        "mosque": "Mošeehoone",
+                        "office": "Büroohoone",
+                        "outbuilding": "Kõrvalhoone",
+                        "pavilion": "Paviljon",
+                        "public": "Avalik hoone",
+                        "residential": "Elamu",
+                        "retail": "Jaekaubandushoone",
+                        "roof": "Katus",
+                        "ruins": "Hoone varemed",
+                        "school": "Koolimaja",
+                        "semidetached_house": "Paarismaja",
+                        "service": "Tehniliste teenuste hoone",
+                        "shed": "Kuur",
+                        "stable": "Tall",
+                        "stadium": "Staadionihoone",
+                        "static_caravan": "Paikne haagismaja",
+                        "sty": "Sigala",
+                        "synagogue": "Sünagoogi hoone",
+                        "temple": "Templihoone",
+                        "terrace": "Ridaelamud",
+                        "train_station": "Raudteejaamahoone",
+                        "transportation": "Transpordihoone",
+                        "university": "Ülikoolihoone",
+                        "warehouse": "Laohoone"
+                    },
                     "terms": "ehitis,maja,rajatis"
+                },
+                "building/colour": {
+                    "label": "Seina värv",
+                    "terms": "fassaadi värv"
                 },
                 "building/flats": {
                     "label": "Kortereid",
@@ -341,6 +522,12 @@
                 "building/material": {
                     "label": "Materjal",
                     "terms": "ehitusmaterjal"
+                },
+                "building/part": {
+                    "label": "Hoone osa"
+                },
+                "building/prefabricated": {
+                    "label": "Moodulmaja"
                 },
                 "bunker_type": {
                     "label": "Tüüp"
@@ -369,6 +556,9 @@
                     "placeholder": "50, 100, 200...",
                     "terms": "inimeste arv"
                 },
+                "capacity/caravans": {
+                    "placeholder": "10, 20, 50..."
+                },
                 "capacity/disabled_parking": {
                     "label": "Invakohtade arv",
                     "placeholder": "1, 2, 3..."
@@ -390,7 +580,18 @@
                     "placeholder": "50, 100, 200..."
                 },
                 "castle_type": {
-                    "label": "Tüüp"
+                    "label": "Tüüp",
+                    "options": {
+                        "castrum": "Rooma kindlus",
+                        "defensive": "Kindlusloss",
+                        "fortress": "Kindlus",
+                        "hillfort": "Maalinn",
+                        "kremlin": "Kreml",
+                        "manor": "Mõis",
+                        "palace": "Palee",
+                        "shiro": "Jaapani kindlusloss",
+                        "stately": "Härrastemaja"
+                    }
                 },
                 "changing_table": {
                     "label": "Laud mähkmete vahetuseks"
@@ -409,8 +610,32 @@
                     "label": "Viimati kontrollitud",
                     "placeholder": "YYYY-MM-DD"
                 },
+                "circumference": {
+                    "label": "Ümbermõõt (rinnakõrguselt)",
+                    "placeholder": "1 m, 20 cm, 30\"…"
+                },
                 "clothes": {
-                    "label": "Rõivad"
+                    "label": "Rõivad",
+                    "options": {
+                        "babies": "Väikelaste rõivad",
+                        "children": "Lasterõivad",
+                        "denim": "Teksariidest rõivad",
+                        "fur": "Karusnahast rõivad",
+                        "hats": "Mütsid ja kübarad",
+                        "maternity": "Lapseootel naiste rõivad",
+                        "men": "Meesterõivad",
+                        "motorcycle": "Mootorratturite rõivad",
+                        "oversize": "Rõivad täidlastele",
+                        "socks": "Sokid",
+                        "sports": "Spordirõivad",
+                        "suits": "Ülikonnad",
+                        "swimwear": "Ujumisriided",
+                        "traditional": "Rahvariided",
+                        "underwear": "Aluspesu",
+                        "wedding": "Pulmarõivad",
+                        "women": "Naisterõivad",
+                        "workwear": "Tööriided"
+                    }
                 },
                 "club": {
                     "label": "Tüüp"
@@ -419,7 +644,12 @@
                     "label": "Tühjendusajad"
                 },
                 "collector": {
-                    "label": "Kogutavad objektid"
+                    "label": "Kogutavad objektid",
+                    "options": {
+                        "coins": "Mündid",
+                        "comics": "Koomiksid",
+                        "stamps": "Margid"
+                    }
                 },
                 "colour": {
                     "label": "Värv",
@@ -429,14 +659,30 @@
                     "label": "Muudatuskogumi kommentaar",
                     "placeholder": "Sinu kaastöö lühikirjeldus (nõutav)"
                 },
+                "communication_multi": {
+                    "label": "Sidesüsteem"
+                },
                 "construction": {
                     "label": "Tüüp"
                 },
                 "consulate": {
-                    "label": "Tüüp"
+                    "label": "Tüüp",
+                    "options": {
+                        "consular_agency": "Konsulaarteenuste agentuur",
+                        "consular_office": "Konsulaarteenuste büroo",
+                        "consulate_general": "Peakonsul",
+                        "honorary_consul": "Aukonsul",
+                        "residence": "Konsuli residents",
+                        "yes": "Konsulaat"
+                    }
                 },
                 "consulting": {
                     "label": "Konsulteerimisvaldkond"
+                },
+                "contact/facebook": {
+                    "label": "Facebook'i kasutajanimi või url",
+                    "placeholder": "https://www.facebook.com/MiskiNimi",
+                    "terms": "facebook'i aadress"
                 },
                 "contact/webcam": {
                     "label": "Veebikaamera URL",
@@ -450,12 +696,83 @@
                 "country": {
                     "label": "Riik"
                 },
+                "country_flag": {
+                    "label": "Lipuriik"
+                },
+                "couplings": {
+                    "placeholder": "1, 2, 3..."
+                },
                 "covered": {
                     "label": "Kaetud",
                     "terms": "katusealune"
                 },
+                "covered_no": {
+                    "options": {
+                        "no": "Katmata",
+                        "undefined": "Pole teada, pigem katmata",
+                        "yes": "Kaetud"
+                    }
+                },
                 "craft": {
-                    "label": "Tüüp"
+                    "label": "Tüüp",
+                    "options": {
+                        "agricultural_engines": "Põllumajandusmasinate mootorite mehaanik",
+                        "basket_maker": "Korvipunuja",
+                        "beekeeper": "Mesinik",
+                        "blacksmith": "Sepikoda",
+                        "boatbuilder": "Paadiehitaja",
+                        "bookbinder": "Raamatuköitja",
+                        "brewery": "Pruulikoda",
+                        "builder": "Ehitaja",
+                        "carpenter": "Puusepp",
+                        "carpet_layer": "Vaibapaigaldaja",
+                        "caterer": "Toitlustaja",
+                        "chimney_sweeper": "Korstnapühkija",
+                        "cleaning": "Koristusteenused",
+                        "clockmaker": "Kellassepp",
+                        "confectionery": "Kondiiter",
+                        "distillery": "Viinavabrik",
+                        "dressmaker": "Rätsep",
+                        "electrician": "Elektrik",
+                        "electronics_repair": "Elektroonikaparandus",
+                        "floorer": "Põrandameister",
+                        "gardener": "Aednik",
+                        "glaziery": "Klaasissepp",
+                        "grinding_mill": "Veski",
+                        "handicraft": "Käsitöömeister",
+                        "hvac": "Ventilatsioon",
+                        "insulation": "Soojustaja",
+                        "jeweller": "Juveliir",
+                        "joiner": "Tisler",
+                        "key_cutter": "Võtmemeister",
+                        "locksmith": "Lukksepp",
+                        "metal_construction": "Mettallimeister",
+                        "oil_mill": "Õlipress",
+                        "painter": "Maaler",
+                        "parquet_layer": "Parketipaigaldaja",
+                        "photographer": "Fotograaf",
+                        "photographic_laboratory": "Fotolabor",
+                        "plasterer": "Krohvija",
+                        "plumber": "Torulukksepp",
+                        "pottery": "Pottsepp",
+                        "rigger": "Taglasemeister",
+                        "roofer": "Katuseehitaja",
+                        "saddler": "Sadulsepp",
+                        "sailmaker": "Purjemeister",
+                        "sawmill": "Saekaater",
+                        "scaffolder": "Tellingute valmistaja",
+                        "sculptor": "Skulptor",
+                        "shoemaker": "Kingsepp",
+                        "signmaker": "Sildimeister",
+                        "stonemason": "Kiviraidur",
+                        "tailor": "Rätsep",
+                        "tiler": "Plaatija",
+                        "tinsmith": "Plekksepp",
+                        "upholsterer": "Polsterdaja",
+                        "watchmaker": "Kellassepp",
+                        "window_construction": "Aknameister",
+                        "winery": "Veinitehas"
+                    }
                 },
                 "crane/type": {
                     "label": "Kraana tüüp"
@@ -474,25 +791,52 @@
                     "options": {
                         "american": "ameerika",
                         "asian": "aasia",
-                        "burger": "burger",
+                        "bubble_tea": "mullitee",
+                        "burger": "burgerid",
+                        "cake": "koogid",
                         "chicken": "kana",
                         "chinese": "hiina",
+                        "chocolate": "šokolaad",
                         "coffee_shop": "kohvik",
+                        "dessert": "magustoidud",
+                        "donut": "sõõrikud",
+                        "filipino": "filipiini",
+                        "fish": "kalaroad",
                         "french": "prantsuse",
+                        "georgian": "gruusia",
                         "german": "saksa",
                         "greek": "kreeka",
+                        "hot_dog": "viinersaiad",
                         "ice_cream": "jäätis",
                         "indian": "india",
+                        "indonesian": "indoneesia",
                         "italian": "itaalia",
                         "japanese": "jaapani",
+                        "juice": "mahlad",
                         "kebab": "kebabi",
+                        "korean": "korea",
+                        "lebanese": "liibanoni",
+                        "malaysian": "malai",
                         "mexican": "mehhiko",
+                        "pankcake": "pannkoogid",
+                        "pasta": "pastaroad",
+                        "peruvian": "peruu",
                         "pizza": "pitsa",
+                        "polish": "poola",
+                        "portuguese": "portugali",
                         "regional": "kohalik",
+                        "russian": "vene",
+                        "salad": "salatid",
                         "sandwich": "võileivad",
+                        "seafood": "mereannid",
+                        "spanish": "hispaania",
+                        "steak_house": "liharestoran",
                         "sushi": "sushi",
+                        "taiwanese": "taivani",
+                        "tex-mex": "tex-mex",
                         "thai": "tai",
                         "turkish": "türgi",
+                        "ukrainian": "ukraina",
                         "vietnamese": "vietnami"
                     }
                 },
@@ -588,7 +932,11 @@
                     "terms": "toitumine"
                 },
                 "diplomatic": {
-                    "label": "Tüüp"
+                    "label": "Tüüp",
+                    "options": {
+                        "consulate": "Konsulaat",
+                        "embassy": "Saatkond"
+                    }
                 },
                 "diplomatic/services": {
                     "label": "Teenused"
@@ -625,6 +973,9 @@
                         "sundial": "Päikesekell",
                         "unorthodox": "Ebatavaline"
                     }
+                },
+                "disused/shop": {
+                    "label": "Poe endine tüüp"
                 },
                 "dock": {
                     "label": "Tüüp"
@@ -663,7 +1014,7 @@
                     "label": "Tüüp"
                 },
                 "emergency": {
-                    "label": "Hädaabi"
+                    "label": "Kiirabi"
                 },
                 "emergency_combo": {
                     "label": "Tüüp"
@@ -672,7 +1023,10 @@
                     "label": "Tüüp"
                 },
                 "entrance": {
-                    "label": "Tüüp"
+                    "label": "Tüüp",
+                    "options": {
+                        "home": "Kodu sissepääs"
+                    }
                 },
                 "except": {
                     "label": "Erandid"
@@ -692,6 +1046,11 @@
                 "fire_hydrant/diameter": {
                     "label": "Läbimõõt (mm)"
                 },
+                "fire_hydrant/position": {
+                    "options": {
+                        "parking_lot": "Parkimiskohas"
+                    }
+                },
                 "fire_hydrant/pressure": {
                     "label": "Surve (baarides)",
                     "terms": "rõhk (baarides)"
@@ -703,6 +1062,11 @@
                         "pipe": "Kaetud toru",
                         "underground": "Maa-alune",
                         "wall": "Seinahüdrant"
+                    }
+                },
+                "fire_sprinkler": {
+                    "options": {
+                        "yes": "Sprinkler tüüp pole teada"
                     }
                 },
                 "fireplace": {
@@ -747,6 +1111,9 @@
                 "gauge": {
                     "label": "Rööpalaius"
                 },
+                "gender": {
+                    "placeholder": "Teadmata"
+                },
                 "generator/method": {
                     "label": "Meetod"
                 },
@@ -785,8 +1152,51 @@
                     "label": "Teemaviited",
                     "placeholder": "#teemaviitenäidis"
                 },
+                "hazard_boundary": {
+                    "label": "Ohu liik",
+                    "options": {
+                        "archery_range": "vibulasketiir",
+                        "avalanche": "lumelaviinid",
+                        "biohazard": "bioloogilised ohud",
+                        "contamination": "keemiajäätmed",
+                        "electricity": "elektrilöögi oht",
+                        "hole": "ohtlikud augud",
+                        "minefield": "miiniväli",
+                        "nuclear": "radioaktiivsed jäätmed",
+                        "quicksand": "vesiliiv",
+                        "shooting_range": "lasketiir"
+                    }
+                },
                 "healthcare": {
-                    "label": "Tüüp"
+                    "label": "Tüüp",
+                    "options": {
+                        "alternative": "Alternatiivmeditsiin",
+                        "audiologist": "Audioloog",
+                        "birthing_centre": "Sünnitusmaja",
+                        "blood_bank": "Verepank",
+                        "blood_donation": "Verekeskus",
+                        "clinic": "Kliinik",
+                        "community_health_worker": "Kogukonna tervishoiutöötaja",
+                        "counselling": "Nõustamiskeskus",
+                        "dentist": "Hambaarst",
+                        "dialysis": "Dialüüsikeskus",
+                        "doctor": "Arst",
+                        "hospice": "Hospiits",
+                        "hospital": "Haigla",
+                        "laboratory": "Meditsiiniteenuste labor",
+                        "midwife": "Ämmaemand",
+                        "nurse": "Õde",
+                        "occupational_therapist": "Töörtervishoiu terapeut",
+                        "optometrist": "Optometrist",
+                        "pharmacy": "Apteek",
+                        "physiotherapist": "Füsioterapeut",
+                        "podiatrist": "Jalaarst",
+                        "psychotherapist": "Psühhoterapeut",
+                        "rehabilitation": "Taastusraviasutus",
+                        "sample_collection": "Proovide kogumispunkt",
+                        "speech_therapist": "Kõneterapeut",
+                        "vaccination_centre": "Vaktsineerimiskeskus"
+                    }
                 },
                 "healthcare/speciality": {
                     "label": "Erialad"
@@ -801,7 +1211,33 @@
                     "label": "Tüüp"
                 },
                 "historic": {
-                    "label": "Tüüp"
+                    "label": "Tüüp",
+                    "options": {
+                        "archaeological_site": "Arheoloogiline objekt",
+                        "bomb_crater": "Pommikraater",
+                        "boundary_stone": "Piirikivi",
+                        "building": "Ajalooline hoone",
+                        "castle": "Loss",
+                        "charcoal_pile": "Miiliahi",
+                        "church": "Kirik",
+                        "city_gate": "Linnavärav",
+                        "citywalls": "Linnamüür",
+                        "fort": "Ajalooline kindlusehitis",
+                        "manor": "Mõis",
+                        "memorial": "Mälestusmärk",
+                        "milestone": "Ajalooline kilomeetripost",
+                        "mine": "Kaevandus",
+                        "mine_shaft": "Kaevanduskäik",
+                        "monument": "Monument",
+                        "pillory": "Ajalooline häbipost",
+                        "railway": "Raudtee",
+                        "ruins": "Varemed",
+                        "shieling": "Suvine mägikarjamaa",
+                        "tomb": "Hauakamber",
+                        "wayside_cross": "Teeäärne rist",
+                        "wayside_shrine": "Teeäärne altar",
+                        "wreck": "Laevavrakk"
+                    }
                 },
                 "historic/wreck/visible_at_high_tide": {
                     "label": "Nähtav tõusu ajal"
@@ -825,6 +1261,9 @@
                 },
                 "horse_stables": {
                     "label": "Ratsatall"
+                },
+                "house": {
+                    "label": "Maja tüüp"
                 },
                 "iata": {
                     "label": "IATA lennujaamakood"
@@ -901,7 +1340,8 @@
                     "label": "Sõiduread"
                 },
                 "layer": {
-                    "label": "Kiht"
+                    "label": "Kiht",
+                    "placeholder": "0"
                 },
                 "leaf_cycle": {
                     "label": "Lehisus",
@@ -917,7 +1357,7 @@
                     "options": {
                         "broadleaved": "Lehtpuu",
                         "leafless": "Lehed puuduvad",
-                        "needleleaved": "Okkad"
+                        "needleleaved": "Okaspuu"
                     }
                 },
                 "leaf_type_singular": {
@@ -967,18 +1407,82 @@
                 "material": {
                     "label": "Materjal"
                 },
+                "maxaxleload_bridge": {
+                    "label": "Telgede kaalupiirang",
+                    "terms": "telje kaalupiirang"
+                },
                 "maxheight": {
-                    "label": "Kõrguse piirang"
+                    "label": "Kõrguspiirang",
+                    "terms": "kõrguse piirang,kõrguspiirangud,lubatud kõrgus"
+                },
+                "maxlength": {
+                    "label": "Pikkuspiirang",
+                    "terms": "pikkuse piirang,suurim pikkus"
                 },
                 "maxspeed": {
-                    "label": "Kiiruspiirang"
+                    "label": "Kiiruspiirang",
+                    "placeholder": "40, 50, 60..."
                 },
                 "maxspeed/advisory": {
                     "label": "Soovitatav suurim kiirus",
                     "placeholder": "30, 50, 70..."
                 },
+                "maxspeed/hgv": {
+                    "placeholder": "40, 50, 60..."
+                },
+                "maxstay": {
+                    "label": "Ajapiirang",
+                    "terms": "maksimaalne viibimise aeg,suurim viibimise aeg"
+                },
+                "maxweight": {
+                    "label": "Kaalupiirang",
+                    "terms": "lubatud maksimumkaal,suurim lubatud kaal"
+                },
+                "maxwidth": {
+                    "label": "Laiuspiirang",
+                    "terms": "lubatud maksimumlaius,suurim lubatud laius"
+                },
                 "memorial": {
-                    "label": "Tüüp"
+                    "label": "Tüüp",
+                    "options": {
+                        "plaque": "Mälestustahvel"
+                    }
+                },
+                "microbrewery": {
+                    "terms": "käsitööõlu,väikepruulikoda"
+                },
+                "military_service": {
+                    "options": {
+                        "air_force": "Õhuvägi",
+                        "army": "Maavägi",
+                        "coast_guard": "Rannavalve",
+                        "marines": "Merejalavägi",
+                        "navy": "Merevägi"
+                    }
+                },
+                "minspeed": {
+                    "placeholder": "20, 30, 40..."
+                },
+                "mobile": {
+                    "label": "Mobiiltelefon",
+                    "placeholder": "+372 56 565656",
+                    "terms": "mobiil,nutitelefon"
+                },
+                "mooring": {
+                    "label": "Sildumine",
+                    "options": {
+                        "commercial": "Kommetrskasutuseks",
+                        "guest": "Külalistele",
+                        "no": "Pole lubatud",
+                        "private": "Vaid erakasutuseks",
+                        "yes": "Lubatud"
+                    }
+                },
+                "mtb/scale": {
+                    "placeholder": "0, 1, 2, 3..."
+                },
+                "mtb/scale/uphill": {
+                    "placeholder": "0, 1, 2, 3..."
                 },
                 "name": {
                     "label": "Nimi",
@@ -1027,7 +1531,42 @@
                     "label": "Märkus"
                 },
                 "office": {
-                    "label": "Tüüp"
+                    "label": "Tüüp",
+                    "options": {
+                        "accountant": "Raamatupidamisteenus",
+                        "adoption_agency": "Lapsendamisbüroo",
+                        "advertising_agency": "Reklaamibüroo",
+                        "architect": "Arhitektuuribüroo",
+                        "association": "MTÜ kontor",
+                        "charity": "Heategevusasutuse büroo",
+                        "company": "Äriühingu kontor",
+                        "construction_company": "Ehitusfirma kontor",
+                        "consulting": "Konsultatsioonifirma kontor",
+                        "courier": "Kullerifirma kontor",
+                        "engineer": "Inseneriteenuste firma kontor",
+                        "estate_agent": "Kinnisvarabüroo",
+                        "financial": "Rahandusteenuste firma kontor",
+                        "financial_advisor": "Rahandusnõustaja",
+                        "forestry": "Metsaameti kontor",
+                        "government": "Valitsusasutuse kontor",
+                        "graphic_design": "Kujundusfirma kontor",
+                        "guide": "Giidibüroo",
+                        "insurance": "Kindlustusbüroo",
+                        "it": "IT-firma kontor",
+                        "lawyer": "Advokaadibüroo",
+                        "logistics": "Ekspedeerimisfirma kontor",
+                        "moving_company": "Kolimisfirma kontor",
+                        "newspaper": "Ajalehekirjastus",
+                        "notary": "Notaribüroo",
+                        "political_party": "Partei kontor",
+                        "private_investigator": "Eradetektiivi büroo",
+                        "property_management": "Kinnisvarahaldusfirma kontor",
+                        "tax_advisor": "Maksunõustaja büroo",
+                        "telecommunication": "Sidefirma kontor",
+                        "travel_agent": "Reisibüroo",
+                        "union": "Ametiühingu kontor",
+                        "water_utility": "Veevärgi kontor"
+                    }
                 },
                 "oneway": {
                     "label": "Ühesuunaline",
@@ -1048,8 +1587,12 @@
                         "yes": "Jah"
                     }
                 },
+                "opening_date": {
+                    "placeholder": "AAAA-KK-PP"
+                },
                 "opening_hours": {
-                    "label": "Lahtiolekuaeg"
+                    "label": "Lahtiolekuaeg",
+                    "placeholder": "Teadmata"
                 },
                 "operator": {
                     "label": "Operaator"
@@ -1057,16 +1600,22 @@
                 "outdoor_seating": {
                     "label": "Väliistekohad"
                 },
+                "par": {
+                    "placeholder": "3, 4, 5..."
+                },
                 "park_ride": {
                     "label": "Pargi ja Reisi"
                 },
                 "parking": {
                     "label": "Tüüp",
                     "options": {
-                        "carports": "Katusealune",
+                        "carports": "Auto varjualused",
                         "garage_boxes": "Garaažiboksid",
+                        "half_on_kerb": "Poolenisti kõnniteel",
                         "lane": "Teeäärne parkimisrada",
+                        "layby": "Parkimistasku",
                         "multi-storey": "Mitmekorruseline",
+                        "on_kerb": "Kõnniteel",
                         "rooftop": "Katusel",
                         "sheds": "Angaar",
                         "surface": "Maapealne",
@@ -1074,7 +1623,14 @@
                     }
                 },
                 "payment_multi": {
-                    "label": "Makseviisid"
+                    "label": "Makseviisid",
+                    "options": {
+                        "mastercard": "Mastercard",
+                        "mastercard_contactless": "Mastercard Contactless"
+                    }
+                },
+                "phases": {
+                    "placeholder": "1, 2, 3..."
                 },
                 "phone": {
                     "label": "Telefon",
@@ -1090,14 +1646,34 @@
                 "plant/method": {
                     "label": "Tööpõhimõte"
                 },
+                "plant/output/electricity": {
+                    "placeholder": "500 MW, 1000 MW, 2000 MW..."
+                },
                 "plant/source": {
                     "label": "Energiaallikas"
                 },
                 "playground": {
                     "label": "Tüüp"
                 },
+                "plots": {
+                    "placeholder": "10, 20, 30..."
+                },
                 "population": {
                     "label": "Rahvaarv"
+                },
+                "population/date": {
+                    "placeholder": "AAAA-KK-PP"
+                },
+                "post": {
+                    "label": "Tarneaadress"
+                },
+                "post_box/type": {
+                    "label": "Postkasti tüüp",
+                    "options": {
+                        "lamp": "Postkast teiba küljes",
+                        "pillar": "Maa peal seisev postkast",
+                        "wall": "Seina sees asuv postkast"
+                    }
                 },
                 "power": {
                     "label": "Tüüp"
@@ -1108,6 +1684,9 @@
                 "railway": {
                     "label": "Tüüp"
                 },
+                "railway/position": {
+                    "placeholder": "Kaugus ühe komakohaga (123.4)"
+                },
                 "railway/signal/direction": {
                     "options": {
                         "backward": "Tagasi",
@@ -1115,14 +1694,38 @@
                         "forward": "Edasi"
                     }
                 },
+                "ramp": {
+                    "options": {
+                        "no": "Kaldtee puudub"
+                    }
+                },
                 "recycling_accepts": {
-                    "label": "Võtab vastu"
+                    "label": "Võtab vastu",
+                    "options": {
+                        "batteries": "Patareid",
+                        "cans": "Plekkpurgid",
+                        "cardboard": "Katrong ja papp",
+                        "clothes": "Riided",
+                        "cooking_oil": "Küpsetusõli",
+                        "engine_oil": "Mootoriõli",
+                        "glass": "Igasugune klaas (sh karastatud klaas, aknad, peeglid)",
+                        "glass_bottles": "Klaaspudelid ja -purgid",
+                        "paper": "Paber",
+                        "plastic": "Plastik",
+                        "plastic_bottles": "Plastpudelid",
+                        "plastic_packaging": "Plastpakendid",
+                        "scrap_metal": "Vanametall",
+                        "shoes": "Kingad"
+                    }
                 },
                 "recycling_type": {
                     "label": "Tüüp"
                 },
                 "ref/isil": {
                     "label": "ISIL-kood"
+                },
+                "ref_aeroway_gate": {
+                    "label": "Värava number"
                 },
                 "ref_road_number": {
                     "label": "Tee number/tähis",
@@ -1146,17 +1749,48 @@
                 "room": {
                     "label": "Tüüp"
                 },
+                "rooms": {
+                    "label": "Numbritube"
+                },
                 "route": {
                     "label": "Tüüp"
                 },
                 "route_master": {
                     "label": "Tüüp"
                 },
+                "royal_cypher": {
+                    "label": "Kuninglik monogramm",
+                    "options": {
+                        "CIIIR": "CIIIR (Charles III)",
+                        "EIIR": "EIIR (Elizabeth II)",
+                        "EVIIIR": "EVIIIR (Edward VIII)",
+                        "EVIIR": "EVIIR (Edward VII)",
+                        "GR": "GR (George V)",
+                        "GVIR": "GVIR (George VI)",
+                        "VR": "VR (Victoria)",
+                        "no": "Puudub",
+                        "scottish_crown": "Šoti kroon"
+                    }
+                },
                 "salt": {
                     "label": "Soolane"
                 },
+                "screen": {
+                    "placeholder": "1, 4, 8…"
+                },
+                "seamark/rescue_station/category": {
+                    "options": {
+                        "aircraft": "Lennuk",
+                        "hovercraft": "Hõljuk",
+                        "lifeboat": "Päästepaat rannas",
+                        "lifeboat_on_mooring": "Päästepaat paadisillas"
+                    }
+                },
                 "seasonal": {
                     "label": "Hooajaline"
+                },
+                "seats": {
+                    "placeholder": "2, 4, 6..."
                 },
                 "second_hand": {
                     "label": "Müüb kasutatuid",
@@ -1228,13 +1862,86 @@
                     "placeholder": "Rullidele, Ratastele, Maastikusõidukitele..."
                 },
                 "social_facility": {
-                    "label": "Tüüp"
+                    "label": "Tüüp",
+                    "options": {
+                        "shelter": "Varjupaik"
+                    }
                 },
                 "source": {
                     "label": "Allikad",
                     "options": {
                         "streetlevel imagery": "Tänavatasandi fotod"
                     }
+                },
+                "sport": {
+                    "label": "Spordiala",
+                    "options": {
+                        "10pin": "Bowling",
+                        "9pin": "Keegel",
+                        "american_football": "Ameerika jalgpall",
+                        "athletics": "Kergejõustik",
+                        "badminton": "Sulgpall",
+                        "baseball": "Pesapall",
+                        "basketball": "Korvpall",
+                        "beachvolleyball": "Rannavõrkpall",
+                        "billiards": "Piljardi-tüüpi mängud",
+                        "bmx": "BMX",
+                        "boules": "Puu- ja metallkuulimängud",
+                        "bowls": "Murukeegel",
+                        "canoe": "Kanuusõit",
+                        "chess": "Male",
+                        "climbing": "Ronimine",
+                        "cricket": "Kriket",
+                        "curling": "Jääkeegel",
+                        "cycling": "Rattasõit",
+                        "disc_golf": "Kettagolf",
+                        "dog_racing": "Koerte võidujooks",
+                        "equestrian": "Ratsasport",
+                        "fitness": "Fitness",
+                        "free_flying": "Paraplaaniga või deltaplaaniga lendamine",
+                        "futsal": "Saalijalgpall",
+                        "gaelic_games": "Gaeli spordialad",
+                        "golf": "Golf",
+                        "gymnastics": "Võimlemine",
+                        "handball": "Käsipall",
+                        "horse_racing": "Hobuste võidusõit",
+                        "ice_hockey": "Jäähoki",
+                        "ice_skating": "Iluuisutamine",
+                        "karting": "Kardisõit",
+                        "motocross": "Motokross",
+                        "motor": "Mootorisport",
+                        "multi": "Muud spordialad",
+                        "netball": "Kukkurpall",
+                        "orienteering": "Orienteerumine",
+                        "padel": "Padel",
+                        "pelota": "Pelota",
+                        "rugby_union": "Ragbi (liidureeglite alusel)",
+                        "running": "Jooksmine",
+                        "scuba_diving": "Varustusega sukeldumine",
+                        "shooting": "Laskesport",
+                        "skateboard": "Rulasõit",
+                        "skiing": "Suusatamine",
+                        "soccer": "Jalgpall",
+                        "softball": "Pehmepall",
+                        "speedway": "Speedway",
+                        "swimming": "Ujumine",
+                        "table_tennis": "Lauatennis",
+                        "tennis": "Tennis",
+                        "volleyball": "Võrkpall",
+                        "yoga": "Jooga"
+                    }
+                },
+                "sport/sport_ice": {
+                    "label": "Spordialad"
+                },
+                "sport/sport_pub": {
+                    "label": "Spordialad"
+                },
+                "sport/sport_racing_motor": {
+                    "label": "Spordialad"
+                },
+                "sport/sport_racing_nonmotor": {
+                    "label": "Spordialad"
                 },
                 "start_date": {
                     "label": "Alguskuupäev"
@@ -1257,12 +1964,14 @@
                         "embankment": "Tamm",
                         "ford": "Koolmekoht",
                         "tunnel": "Tunnel"
-                    }
+                    },
+                    "placeholder": "Teadmata"
                 },
                 "structure_waterway": {
                     "options": {
                         "tunnel": "Tunnel"
-                    }
+                    },
+                    "placeholder": "Teadmata"
                 },
                 "studio": {
                     "label": "Tüüp"
@@ -1284,14 +1993,21 @@
                         "compacted": "Kõvakate",
                         "concrete": "Betoon",
                         "dirt": "Muld",
+                        "fine_gravel": "Peenkruus",
                         "grass": "Muru",
                         "gravel": "Kruus",
                         "ground": "Maapind",
+                        "metal": "Metall",
+                        "mud": "Alati mudane",
                         "paved": "Pinnakattega",
-                        "paving_stones": "Sillutuskivid",
+                        "paving_stones": "Siledad sillutuskivid",
+                        "salt": "Sool",
                         "sand": "Liiv",
+                        "sett": "Munakivid (tahutud, kandilised)",
+                        "unhewn_cobblestone": "Munakivid (tahumata, ümmargused)",
                         "unpaved": "Pinnakatteta",
-                        "wood": "puit"
+                        "wood": "Puit",
+                        "woodchips": "Puiduhake"
                     }
                 },
                 "surveillance/type": {
@@ -1316,6 +2032,28 @@
                     },
                     "placeholder": "Jah, Ei, Ainult kaasaost..."
                 },
+                "taxi_vehicle": {
+                    "label": "Sõiduki tüüp",
+                    "options": {
+                        "auto_rickshaw": {
+                            "description": "Mootoriga rikša (nt bajaj, tricycle, tuk-tuk, jne)",
+                            "title": "Autorikša"
+                        },
+                        "cycle_rickshaw": {
+                            "description": "Pedaalidega rikša (nt padyak, velotakso, jne)",
+                            "title": "Rattarikša"
+                        },
+                        "motorcar": {
+                            "description": "Tavaline sõiduauto (vaikimisi eeldus)",
+                            "title": "Sõiduauto"
+                        },
+                        "motorcycle": {
+                            "description": "Klient sõidab mootorratta tagaistmel",
+                            "title": "Mootorratas"
+                        }
+                    },
+                    "terms": "takso tüüp"
+                },
                 "tidal": {
                     "label": "Loodeline"
                 },
@@ -1323,7 +2061,21 @@
                     "label": "Maksustatud"
                 },
                 "tomb": {
-                    "label": "Tüüp"
+                    "label": "Tüüp",
+                    "options": {
+                        "columbarium": "Kolumbaarium",
+                        "crypt": "Krüpt",
+                        "dolmen": "Dolmen",
+                        "hypogeum": "Katakomb",
+                        "mausoleum": "Mausoleum",
+                        "pyramid": "Püramiid",
+                        "rock-cut": "Kaljusse raiutud hauakamber",
+                        "sarcophagus": "Sarkofaag",
+                        "table": "Laua-tüüpi haukivi",
+                        "tumulus": "Kalmuküngas",
+                        "vault": "Hauakamber",
+                        "war_grave": "Sõjahaud"
+                    }
                 },
                 "tourism": {
                     "label": "Tüüp"
@@ -1334,6 +2086,7 @@
                 "tracktype": {
                     "label": "Tee kõvadus",
                     "options": {
+                        "grade1": "Kõva: sillutatud",
                         "grade2": "Peamiselt kõva: sillutamata tee, kruus, kivi või kõva pinnas",
                         "grade3": "Ühtlane segu kõvadest ja pehmetest materjalidest",
                         "grade4": "Peamiselt pehme: suurem osa muld, liiv või rohi, osaliselt kõva pinnas",
@@ -1357,8 +2110,24 @@
                         "forward": "Edasi"
                     }
                 },
+                "trail_visibility": {
+                    "label": "Matkaraja leitavus",
+                    "options": {
+                        "bad": "Halb: rada on halvasti nähtav või olematu ning viitasid ei leidu",
+                        "excellent": "Suurepärane: üheselt märgitud rada ja/või selged viidad kõikjal",
+                        "good": "Hea: rada ning viidad on näha, kuid viidad mõnikord vajavad otsimist",
+                        "horrible": "Jube: üldiselt pole rada näha ning mõningane orienteerumisoskus on vajalik",
+                        "intermediate": "Keskmine: rada on enamuses näha, aga viitasid on vähe",
+                        "no": "Olematu: rada pole näha ning hea orienteerumisoskus on vajalik"
+                    },
+                    "placeholder": "Suurepärane, hea, halb...",
+                    "terms": "matkaraja nähtavus,raja leitavus"
+                },
                 "transformer": {
-                    "label": "Tüüp"
+                    "label": "Tüüp",
+                    "options": {
+                        "yes": "Trafo tüüp pole teada"
+                    }
                 },
                 "trees": {
                     "label": "Puud"
@@ -1366,8 +2135,32 @@
                 "tunnel": {
                     "label": "Tüüp"
                 },
+                "tunnel_combo": {
+                    "label": "Tunneli tüüp",
+                    "options": {
+                        "avalanche_protector": "Lumelaviini kaitsetunnel",
+                        "building_passage": "Läbikäik hoonest",
+                        "culvert": "Truup",
+                        "flooded": "Üleujutatav tunnel (ei sobi inimestele)"
+                    }
+                },
+                "turning_circle": {
+                    "label": "Kuju"
+                },
+                "two_sided": {
+                    "label": "Kahepoolne",
+                    "options": {
+                        "undefined": "Ei",
+                        "yes": "Jah"
+                    }
+                },
                 "usage_rail": {
-                    "label": "Kasutusotstarve"
+                    "label": "Kasutusotstarve",
+                    "options": {
+                        "military": "Sõjaline otstarve",
+                        "test": "Testimine",
+                        "tourism": "Turism"
+                    }
                 },
                 "vehicles": {
                     "label": "Sõidukid",
@@ -1383,7 +2176,32 @@
                     }
                 },
                 "vending": {
-                    "label": "Kauba tüübid"
+                    "label": "Kauba tüübid",
+                    "options": {
+                        "bicycle_tube": "rattarehvid",
+                        "bread": "leib",
+                        "cigarettes": "sigaretid",
+                        "coffee": "kohv",
+                        "condoms": "kondoomid",
+                        "drinks": "joogid",
+                        "eggs": "munad",
+                        "electronics": "elektroonika",
+                        "elongated_coin": "suveniirmündid",
+                        "excrement_bags": "väljaheitekotid",
+                        "feminine_hygiene": "naiste hügieenitarbed",
+                        "food": "toit",
+                        "fuel": "kütus",
+                        "ice_cream": "jäätis",
+                        "ice_cubes": "jääkuubikud",
+                        "milk": "piim",
+                        "newspapers": "ajalehed",
+                        "parking_tickets": "parkimispiletid",
+                        "pizza": "pitsa",
+                        "public_transport_tickets": "ühistranspordipiletid",
+                        "stamps": "postmargid",
+                        "sweets": "maiustused",
+                        "water": "joogivesi"
+                    }
                 },
                 "visibility": {
                     "label": "Nähtavus"
@@ -1408,12 +2226,16 @@
                     "label": "Tüüp"
                 },
                 "website": {
-                    "label": "Veebileht"
+                    "label": "Veebileht",
+                    "placeholder": "http://näidis.ee"
+                },
+                "website/menu": {
+                    "placeholder": "http://näidis.ee"
                 },
                 "wetland": {
                     "label": "Tüüp",
                     "options": {
-                        "bog": "Soo",
+                        "bog": "Raba",
                         "mangrove": "Mangroov",
                         "marsh": "Padur",
                         "reedbed": "Roostik",
@@ -1454,6 +2276,10 @@
                 "aeroway/aerodrome": {
                     "name": "Lennujaam"
                 },
+                "aeroway/gate": {
+                    "name": "Terminalivärav",
+                    "terms": "reisijavärav"
+                },
                 "aeroway/hangar": {
                     "name": "Angaar"
                 },
@@ -1484,6 +2310,9 @@
                 "amenity": {
                     "name": "Hüve"
                 },
+                "amenity/animal_shelter": {
+                    "name": "Loomade varjupaik"
+                },
                 "amenity/arts_centre": {
                     "name": "Kunstide keskus",
                     "terms": "kunstidemaja"
@@ -1497,6 +2326,9 @@
                 },
                 "amenity/bar": {
                     "name": "Baar"
+                },
+                "amenity/bar/lgbtq": {
+                    "name": "LGBTQ+ baar"
                 },
                 "amenity/bbq": {
                     "name": "Väligrill",
@@ -1520,11 +2352,19 @@
                     "name": "Jalgrattaremondi pukk"
                 },
                 "amenity/boat_rental": {
-                    "name": "Paadi laenutus"
+                    "name": "Paadilaenutus",
+                    "terms": "paadirent"
+                },
+                "amenity/boat_storage": {
+                    "name": "Staapelplats",
+                    "terms": "paadikuur"
                 },
                 "amenity/bureau_de_change": {
                     "name": "Valuutavahetus",
                     "terms": "rahavahetus"
+                },
+                "amenity/bus_station": {
+                    "name": "Bussijaam"
                 },
                 "amenity/cafe": {
                     "name": "Kohvik"
@@ -1557,6 +2397,10 @@
                 "amenity/clinic/abortion": {
                     "name": "Abordikliinik"
                 },
+                "amenity/clinic/dialysis": {
+                    "name": "Dialüüsikeskus",
+                    "terms": "dialüüsiteenus"
+                },
                 "amenity/clinic/fertility": {
                     "name": "Viljakuskliinik"
                 },
@@ -1564,12 +2408,21 @@
                     "name": "Kell",
                     "terms": "seinakell"
                 },
+                "amenity/clock/sundial": {
+                    "name": "Päikesekell"
+                },
                 "amenity/college": {
                     "name": "Kolledžiala"
                 },
                 "amenity/community_centre": {
                     "name": "Kogukonna keskus",
                     "terms": "keskus,üritused,hall,rahvamaja,kultuurikeskus,külakeskus,spordikeskus,külamaja"
+                },
+                "amenity/community_centre/lgbtq": {
+                    "name": "LGBTQ+ kogukonnakeskus"
+                },
+                "amenity/community_centre/youth_centre": {
+                    "name": "Noortekeskus"
                 },
                 "amenity/compressed_air": {
                     "name": "Suruõhk",
@@ -1592,12 +2445,119 @@
                 "amenity/dentist": {
                     "name": "Hambaarst"
                 },
+                "amenity/dive_centre": {
+                    "name": "Sukeldumiskeskus"
+                },
                 "amenity/doctors": {
                     "name": "Arst",
                     "terms": "doktor"
                 },
+                "amenity/doctors/allergology": {
+                    "name": "Allergoloog",
+                    "terms": "allergiaarst"
+                },
+                "amenity/doctors/cardiology": {
+                    "name": "Kardioloog",
+                    "terms": "südamearst,südamehaiguste eriarst,südamehaiguste arst"
+                },
+                "amenity/doctors/child_psychiatry": {
+                    "name": "Laste ja noorukite psühhiaater"
+                },
+                "amenity/doctors/dermatology": {
+                    "name": "Nahaarst",
+                    "terms": "nahahaiguste eriarst,dermatoloog"
+                },
+                "amenity/doctors/gastroenterology": {
+                    "name": "Gastroenteroloog",
+                    "terms": "mao- ja sooltearst,gastroenteroloogia spetsialist,gastroenteroloogia eriarst,gastroenteroloogia arst"
+                },
+                "amenity/doctors/general": {
+                    "name": "Perearst",
+                    "terms": "esmatasandi üldarst,üldarst"
+                },
+                "amenity/doctors/gynaecology": {
+                    "name": "Sünnitusarst/günekoloog"
+                },
+                "amenity/doctors/haematology": {
+                    "name": "Hematoloog",
+                    "terms": "verearst,vere- ja vereloomeelundite haiguste eriarst"
+                },
+                "amenity/doctors/internal": {
+                    "name": "Sisehaiguste arst"
+                },
+                "amenity/doctors/nephrology": {
+                    "name": "Neeruhaiguste arst",
+                    "terms": "nefroloog,neeruhaiguste eriarst"
+                },
+                "amenity/doctors/neurology": {
+                    "name": "Neuroloog",
+                    "terms": "närviarst"
+                },
+                "amenity/doctors/neurosurgery": {
+                    "name": "Neurokirurg"
+                },
+                "amenity/doctors/oncology": {
+                    "name": "Onkoloog"
+                },
+                "amenity/doctors/ophthalmology": {
+                    "name": "Silmaarst"
+                },
+                "amenity/doctors/orthopaedics": {
+                    "name": "Ortopeediline kirurg"
+                },
+                "amenity/doctors/otolaryngology": {
+                    "name": "Kõrva-nina-kurguarst"
+                },
+                "amenity/doctors/paediatrics": {
+                    "name": "Lastearst",
+                    "aliases": "Pediaater"
+                },
+                "amenity/doctors/pathology": {
+                    "name": "Patoloog"
+                },
+                "amenity/doctors/plastic_surgery": {
+                    "name": "Ilukirurg"
+                },
+                "amenity/doctors/podiatry": {
+                    "name": "Jalaarst"
+                },
+                "amenity/doctors/proctology": {
+                    "name": "Kolorektaalkirurg"
+                },
+                "amenity/doctors/psychiatrist": {
+                    "name": "Psühhiaater"
+                },
+                "amenity/doctors/pulmonology": {
+                    "name": "Pulmonoloog",
+                    "aliases": "Kopsuarst"
+                },
+                "amenity/doctors/radiology": {
+                    "name": "Radioloog"
+                },
+                "amenity/doctors/rheumatology": {
+                    "name": "Reumatoloog"
+                },
+                "amenity/doctors/surgery": {
+                    "name": "Üldkirurg"
+                },
+                "amenity/doctors/trauma": {
+                    "name": "Traumakirurg"
+                },
+                "amenity/doctors/urology": {
+                    "name": "Uroloog"
+                },
+                "amenity/dojo": {
+                    "name": "Dōjō / Võitluskunstide kool"
+                },
+                "amenity/dressing_room": {
+                    "name": "Riietuskabiin",
+                    "aliases": "Proovikabiin"
+                },
                 "amenity/drinking_water": {
                     "name": "Joogivesi"
+                },
+                "amenity/driver_training": {
+                    "name": "Õppesõiduplats"
                 },
                 "amenity/driving_school": {
                     "name": "Sõidukool",
@@ -1610,8 +2570,37 @@
                     "name": "Ürituste toimumiskoht",
                     "terms": "sündmuste,hall,tähistuskoht,saal,peosaal,peokoht,pidu,seminari,koolituste,rendiruumid"
                 },
+                "amenity/exhibition_centre": {
+                    "name": "Messikeskus",
+                    "terms": "näituste väljak"
+                },
                 "amenity/fast_food": {
-                    "name": "Kiirtoitlustus"
+                    "name": "Kiirtoitlustus",
+                    "terms": "kiirtoidukoht,tänavatoidukoht,tänavatoit"
+                },
+                "amenity/fast_food/bagel": {
+                    "name": "Soolakringlikohvik"
+                },
+                "amenity/fast_food/burger": {
+                    "name": "Burgeriputka"
+                },
+                "amenity/fast_food/cafeteria": {
+                    "name": "Söökla"
+                },
+                "amenity/fast_food/donut": {
+                    "name": "Sõõrikukohvik"
+                },
+                "amenity/fast_food/ice_cream": {
+                    "name": "Jäätisekohvik"
+                },
+                "amenity/fast_food/juice": {
+                    "name": "Mahlabaar"
+                },
+                "amenity/fast_food/pizza": {
+                    "name": "Pitsarestoran"
+                },
+                "amenity/ferry_terminal": {
+                    "name": "Praamiterminal"
                 },
                 "amenity/fire_station": {
                     "name": "Päästedepoo",
@@ -1628,12 +2617,19 @@
                     "name": "Tankla",
                     "terms": "bensiinijaam,kütusejaam,kütus"
                 },
+                "amenity/give_box": {
+                    "name": "Taaskasutuskonteiner"
+                },
                 "amenity/grave_yard": {
                     "name": "Surnuaed",
                     "terms": "kalmistu"
                 },
                 "amenity/grit_bin": {
                     "name": "Libedustõrje kast"
+                },
+                "amenity/hookah_lounge": {
+                    "name": "Vesipiibu baar",
+                    "terms": "vesipiibu sohvabaar,vesipiibu salong"
                 },
                 "amenity/hospital": {
                     "name": "Haigla territoorium",
@@ -1646,12 +2642,38 @@
                 "amenity/ice_cream": {
                     "name": "Jäätisekohvik"
                 },
+                "amenity/ice_cream/frozen_yogurt": {
+                    "name": "Jogurtijäätise kohvik"
+                },
                 "amenity/internet_cafe": {
                     "name": "Internetikohvik",
                     "terms": "internetipunkt"
                 },
+                "amenity/karaoke_box": {
+                    "name": "Karaokebaar"
+                },
+                "amenity/kindergarten": {
+                    "name": "Lasteaed"
+                },
+                "amenity/language_school": {
+                    "name": "Keeltekool"
+                },
+                "amenity/letter_box": {
+                    "name": "Kirjakast"
+                },
                 "amenity/library": {
                     "name": "Raamatukogu"
+                },
+                "amenity/loading_dock": {
+                    "name": "Laoestakaad",
+                    "aliases": "Laadimissild"
+                },
+                "amenity/lounger": {
+                    "name": "Rannatool",
+                    "aliases": "Päevitustool"
+                },
+                "amenity/love_hotel": {
+                    "name": "Armuhotell"
                 },
                 "amenity/marketplace": {
                     "name": "Turg",
@@ -1660,14 +2682,29 @@
                 "amenity/monastery": {
                     "name": "Kloostriala"
                 },
+                "amenity/mortuary": {
+                    "name": "Surnukamber"
+                },
                 "amenity/motorcycle_parking": {
                     "name": "Mootorratta parkla"
+                },
+                "amenity/motorcycle_rental": {
+                    "name": "Mootorratta rent"
+                },
+                "amenity/music_school": {
+                    "name": "Muusikakool"
                 },
                 "amenity/nightclub": {
                     "name": "Ööklubi"
                 },
+                "amenity/nightclub/lgbtq": {
+                    "name": "LGBTQ+ ööklubi"
+                },
                 "amenity/nursing_home": {
                     "name": "Hoolduskodu"
+                },
+                "amenity/parcel_locker": {
+                    "name": "Pakiautomaat"
                 },
                 "amenity/parking": {
                     "name": "Autoparkla",
@@ -1680,9 +2717,21 @@
                 "amenity/parking/underground": {
                     "name": "Maa-alune parkla"
                 },
+                "amenity/parking_entrance": {
+                    "name": "Parkimismaja sisse/väljapääs"
+                },
                 "amenity/parking_space": {
                     "name": "Parkimiskoht",
                     "terms": "parkla"
+                },
+                "amenity/payment_centre": {
+                    "name": "Makseteenuste keskus"
+                },
+                "amenity/payment_terminal": {
+                    "name": "Makseterminal"
+                },
+                "amenity/pharmacy": {
+                    "name": "Apteek"
                 },
                 "amenity/photo_booth": {
                     "name": "Fotokabiin"
@@ -1699,6 +2748,13 @@
                     "name": "Kristlik kirik",
                     "terms": "kirik,katedraal,püha,luteri,kabel,pühamu"
                 },
+                "amenity/place_of_worship/christian/quaker": {
+                    "name": "Kveekerite palvemaja",
+                    "terms": "sõprade kiriku palvemaja"
+                },
+                "amenity/place_of_worship/hindu": {
+                    "name": "Hindu tempel"
+                },
                 "amenity/place_of_worship/jewish": {
                     "name": "Juudi sünagoog",
                     "terms": "sünagoog,juudi,juut,judaism"
@@ -1707,14 +2763,29 @@
                     "name": "Islami mošee",
                     "terms": "muslim,moslem,mosee"
                 },
+                "amenity/place_of_worship/shinto": {
+                    "name": "Šinto tempel"
+                },
+                "amenity/place_of_worship/sikh": {
+                    "name": "Sihki tempel"
+                },
+                "amenity/place_of_worship/taoist": {
+                    "name": "Taoistlik tempel"
+                },
                 "amenity/planetarium": {
                     "name": "Planetaarium"
                 },
                 "amenity/police": {
                     "name": "Politsei"
                 },
+                "amenity/polling_station": {
+                    "name": "Valimisjaoskond"
+                },
                 "amenity/post_box": {
                     "name": "Kirjakast"
+                },
+                "amenity/post_depot": {
+                    "name": "Postitöötlemiskeskus"
                 },
                 "amenity/post_office": {
                     "name": "Postkontor"
@@ -1730,6 +2801,12 @@
                 "amenity/pub/irish": {
                     "name": "Iiri pubi"
                 },
+                "amenity/pub/lgbtq": {
+                    "name": "LGBTQ+ kõrts"
+                },
+                "amenity/pub/microbrewery": {
+                    "name": "Kõrts ja pruulikoda"
+                },
                 "amenity/public_bookcase": {
                     "name": "Avalik raamaturiiul",
                     "terms": "raamaturiiul"
@@ -1738,9 +2815,28 @@
                     "name": "Looduskeskus",
                     "terms": "külastuskeskus"
                 },
+                "amenity/recycling": {
+                    "name": "Jäätmekäitlus"
+                },
+                "amenity/recycling/container/electrical_items": {
+                    "name": "Elektroonikajäätmete konteiner"
+                },
+                "amenity/recycling/container/green_waste": {
+                    "name": "Komposteeritavate jäätmete konteiner"
+                },
                 "amenity/recycling_centre": {
-                    "name": "Ümbertöötluskeskus",
-                    "terms": "taaskasutuskeskus"
+                    "name": "Jäätmejaam",
+                    "terms": "ümbertöötluskeskus,taaskasutuskeskus"
+                },
+                "amenity/recycling_container": {
+                    "name": "Taaskasutuskonteiner",
+                    "terms": "uuskasutuskonteiner,pakendikonteiner"
+                },
+                "amenity/refugee_site": {
+                    "name": "Põgenikelaager"
+                },
+                "amenity/research_institute": {
+                    "name": "Teadusinstituut"
                 },
                 "amenity/restaurant": {
                     "name": "Restoran"
@@ -1751,11 +2847,18 @@
                 "amenity/restaurant/asian": {
                     "name": "Aasia restoran"
                 },
+                "amenity/restaurant/barbecue": {
+                    "name": "Grillliha restoran",
+                    "terms": "barbecue,barbeque,bbq"
+                },
                 "amenity/restaurant/chinese": {
                     "name": "Hiina restoran"
                 },
                 "amenity/restaurant/french": {
                     "name": "Prantsuse restoran"
+                },
+                "amenity/restaurant/georgian": {
+                    "name": "Gruusia restoran"
                 },
                 "amenity/restaurant/german": {
                     "name": "Saksa restoran"
@@ -1772,6 +2875,9 @@
                 "amenity/restaurant/japanese": {
                     "name": "Jaapani restoran"
                 },
+                "amenity/restaurant/korean": {
+                    "name": "Korea restoran"
+                },
                 "amenity/restaurant/mexican": {
                     "name": "Mehhiko restoran"
                 },
@@ -1781,8 +2887,18 @@
                 "amenity/restaurant/pizza": {
                     "name": "Pitsarestoran"
                 },
+                "amenity/restaurant/ramen": {
+                    "name": "Jaapani nuudlirestoran"
+                },
                 "amenity/restaurant/seafood": {
                     "name": "Mereannirestoran"
+                },
+                "amenity/restaurant/spanish": {
+                    "name": "Hispaania restoran"
+                },
+                "amenity/restaurant/steakhouse": {
+                    "name": "Liharestoran",
+                    "terms": "steakhouse"
                 },
                 "amenity/restaurant/sushi": {
                     "name": "Sushi-restoran"
@@ -1792,6 +2908,9 @@
                 },
                 "amenity/restaurant/turkish": {
                     "name": "Türgi restoran"
+                },
+                "amenity/restaurant/ukrainian": {
+                    "name": "Ukraina restoran"
                 },
                 "amenity/restaurant/vietnamese": {
                     "name": "Vietnami restoran"
@@ -1803,6 +2922,19 @@
                 "amenity/shelter": {
                     "name": "Varjualune",
                     "terms": "ulualune,räästaalune,peavari"
+                },
+                "amenity/shelter/gazebo": {
+                    "name": "Lehtla"
+                },
+                "amenity/shelter/lean_to": {
+                    "name": "Poolvarikatus"
+                },
+                "amenity/shelter/picnic_shelter": {
+                    "name": "Piknikulaua varikatus"
+                },
+                "amenity/shelter/public_transport": {
+                    "name": "Ühistranspordi ootepaviljon",
+                    "terms": "ühistranspordipeatuse varikatus"
                 },
                 "amenity/shower": {
                     "name": "Dušš"
@@ -1831,6 +2963,9 @@
                 "amenity/social_facility/nursing_home": {
                     "name": "Hooldekodu"
                 },
+                "amenity/stripclub": {
+                    "name": "Striptiisiklubi"
+                },
                 "amenity/studio": {
                     "name": "Stuudio",
                     "terms": "tv,raadiomaja,telemaja,lindistus,helistuudio"
@@ -1852,12 +2987,28 @@
                 "amenity/taxi": {
                     "name": "Taksopeatus"
                 },
+                "amenity/taxi/auto_rickshaw": {
+                    "name": "Autorikša peatus"
+                },
+                "amenity/taxi/cycle_rickshaw": {
+                    "name": "Rattarikša peatus"
+                },
+                "amenity/taxi/motorcycle_taxi": {
+                    "name": "Mototakso peatus"
+                },
                 "amenity/telephone": {
                     "name": "Taksofon",
                     "terms": "telefon,telefoniautomaat"
                 },
                 "amenity/theatre": {
                     "name": "Teater"
+                },
+                "amenity/theatre/type/amphi": {
+                    "name": "Amfiteater"
+                },
+                "amenity/toilets": {
+                    "name": "Tualettruum",
+                    "aliases": "Tualett"
                 },
                 "amenity/townhall": {
                     "name": "Linnahall",
@@ -1866,19 +3017,94 @@
                 "amenity/university": {
                     "name": "Ülikooliala"
                 },
+                "amenity/vending_machine": {
+                    "name": "Müügiautomaat"
+                },
+                "amenity/vending_machine/bicycle_tube": {
+                    "name": "Rattarehvide müügiautomaat"
+                },
+                "amenity/vending_machine/bottle_return": {
+                    "name": "Taaraautomaat",
+                    "terms": "taarapunkt,taara tagastus"
+                },
+                "amenity/vending_machine/bread": {
+                    "name": "Leiva müügiautomaat"
+                },
+                "amenity/vending_machine/cigarettes": {
+                    "name": "Sigarettide müügiautomaat"
+                },
+                "amenity/vending_machine/coffee": {
+                    "name": "Kohviautomaat"
+                },
+                "amenity/vending_machine/condoms": {
+                    "name": "Kondoomiautomaat"
+                },
+                "amenity/vending_machine/drinks": {
+                    "name": "Joogiautomaat"
+                },
+                "amenity/vending_machine/eggs": {
+                    "name": "Munade müügiautomaat"
+                },
+                "amenity/vending_machine/electronics": {
+                    "name": "Elektroonika müügiautomaat"
+                },
+                "amenity/vending_machine/elongated_coin": {
+                    "name": "Suveniirmüntide müügiautomaat"
+                },
+                "amenity/vending_machine/excrement_bags": {
+                    "name": "Väljaheitekottide müügiautomaat"
+                },
+                "amenity/vending_machine/feminine_hygiene": {
+                    "name": "Naiste hügieenitarvete müügiautomaat"
+                },
+                "amenity/vending_machine/food": {
+                    "name": "Toidu müügiautomaat"
+                },
+                "amenity/vending_machine/fuel": {
+                    "name": "Kütusetankur"
+                },
+                "amenity/vending_machine/ice_cream": {
+                    "name": "Jäätise müügiautomaat"
+                },
+                "amenity/vending_machine/ice_cubes": {
+                    "name": "Jääkuubikute müügiautomaat"
+                },
+                "amenity/vending_machine/newspapers": {
+                    "name": "Ajalehtede müügiautomaat"
+                },
                 "amenity/vending_machine/parking_tickets": {
                     "name": "Parkimispileti automaat"
+                },
+                "amenity/vending_machine/pizza": {
+                    "name": "Pitsa müügiautomaat"
+                },
+                "amenity/vending_machine/public_transport_tickets": {
+                    "name": "Ühistranspordipileti automaat"
+                },
+                "amenity/vending_machine/stamps": {
+                    "name": "Postmarkide müügiautomaat"
+                },
+                "amenity/vending_machine/sweets": {
+                    "name": "Maiustuste müügiautomaat"
                 },
                 "amenity/veterinary": {
                     "name": "Loomaarst",
                     "terms": "loomakliinik"
                 },
                 "amenity/waste_basket": {
-                    "name": "Prügikast"
+                    "name": "Prügikast",
+                    "terms": "pühkmekast,prügiurn,prügikorv,prügikonteiner"
                 },
                 "amenity/waste_disposal": {
                     "name": "Prügikonteiner",
                     "terms": "konteiner"
+                },
+                "amenity/watering_place": {
+                    "name": "Loomade joogikoht"
+                },
+                "amenity/weighbridge": {
+                    "name": "Autokaal",
+                    "aliases": "Platvormkaal"
                 },
                 "area": {
                     "name": "Ala"
@@ -1888,7 +3114,7 @@
                 },
                 "barrier": {
                     "name": "Barjäär",
-                    "terms": "tõke,takistus,blokeering,läbisõidupiirang"
+                    "terms": "tõke,takistus,blokeering,läbisõidupiirang,läbisõidupiiraja"
                 },
                 "barrier/block": {
                     "name": "Plokk",
@@ -1898,19 +3124,33 @@
                     "name": "Piirdetulp",
                     "terms": "pollar,piirdepost"
                 },
+                "barrier/bollard_line": {
+                    "name": "Piirdetulpade rivi"
+                },
                 "barrier/border_control": {
                     "name": "Piiripunkt",
                     "terms": "piirikontroll,piiriületuspunkt"
+                },
+                "barrier/bump_gate": {
+                    "name": "Põrkevärav"
+                },
+                "barrier/cable_barrier": {
+                    "name": "Trosspiire",
+                    "terms": "ohutuspiire,kettpiire,nöörpiire"
                 },
                 "barrier/cattle_grid": {
                     "name": "Karjatara",
                     "terms": "tara,karjus,elektrikarjus,looma"
                 },
+                "barrier/chain": {
+                    "name": "Kettvärav"
+                },
                 "barrier/city_wall": {
                     "name": "Linnamüür"
                 },
                 "barrier/cycle_barrier": {
-                    "name": "Jalgratta barjäär"
+                    "name": "Jalgratta barjäär",
+                    "terms": "rattabarjäär,rattatõke"
                 },
                 "barrier/ditch": {
                     "name": "Kraav"
@@ -1921,22 +3161,44 @@
                 "barrier/fence": {
                     "name": "Aed"
                 },
+                "barrier/full-height_turnstile": {
+                    "name": "Täiskõrguses pöördvärav",
+                    "terms": "täiskõrguses turnikee,täiskõrguses pöördrist"
+                },
                 "barrier/gate": {
                     "name": "Värav"
+                },
+                "barrier/hampshire_gate": {
+                    "name": "Traatvärav",
+                    "terms": "traadist karvavärav"
                 },
                 "barrier/hedge": {
                     "name": "Hekk"
                 },
+                "barrier/jersey_barrier": {
+                    "name": "Teetõkkeplokk",
+                    "terms": "tagurpidi t-piire,betoonpiire,betoontõke,plastikust teetõke"
+                },
+                "barrier/kerb": {
+                    "name": "Kõnnitee serv"
+                },
                 "barrier/kissing_gate": {
                     "name": "Karjavärav"
                 },
+                "barrier/lift_gate": {
+                    "name": "Tõkkepuu",
+                    "terms": "teevaldas,valdas"
+                },
+                "barrier/planter": {
+                    "name": "Linnamööbli taimepott piirdena"
+                },
                 "barrier/retaining_wall": {
-                    "name": "Tugisein",
-                    "terms": "kaitsemüür"
+                    "name": "Tugimüür",
+                    "terms": "tugisein,kaitsemüür"
                 },
                 "barrier/stile": {
-                    "name": "Astmestik",
-                    "terms": "astmed"
+                    "name": "Taratrepp",
+                    "terms": "astmed,astmestik"
                 },
                 "barrier/swing_gate": {
                     "name": "Tiib-tõkkepuu",
@@ -1946,8 +3208,8 @@
                     "name": "Teemaksuputka"
                 },
                 "barrier/turnstile": {
-                    "name": "Turnikee",
-                    "terms": "pöördvärav,kolmeharuline"
+                    "name": "Pöördvärav",
+                    "terms": "turnikee,pöördrist,kolmeharuline"
                 },
                 "barrier/wall": {
                     "name": "Müür",
@@ -1957,12 +3219,33 @@
                     "name": "Müratõke",
                     "terms": "helitõke,müratõkkesein,tõkkevall"
                 },
+                "barrier/wicket_gate": {
+                    "name": "Jalgvärav",
+                    "terms": "külgvärav,väike värav"
+                },
+                "barrier/yes": {
+                    "name": "Määratlemata tõke"
+                },
+                "boundary": {
+                    "name": "Piirjoon"
+                },
                 "boundary/administrative": {
                     "name": "Halduspiir"
+                },
+                "boundary/hazard": {
+                    "name": "Ohtlik ala",
+                    "terms": "ohtlik piirkond"
+                },
+                "bridge/support/pier": {
+                    "name": "Sillasammas",
+                    "terms": "piilar"
                 },
                 "building": {
                     "name": "Hoone",
                     "terms": "ehitis,maja"
+                },
+                "building/allotment_house": {
+                    "name": "Aiamajakene"
                 },
                 "building/apartments": {
                     "name": "Kortermaja"
@@ -1970,6 +3253,10 @@
                 "building/barn": {
                     "name": "Küün",
                     "terms": "tall,laut"
+                },
+                "building/boathouse": {
+                    "name": "Paadimaja",
+                    "terms": "paadikuur vee peal"
                 },
                 "building/bungalow": {
                     "name": "Bangalo",
@@ -1984,7 +3271,7 @@
                 },
                 "building/carport": {
                     "name": "Auto varjualune",
-                    "terms": "katus,varjualune"
+                    "terms": "katus,varjualune,katusealune,varikatus"
                 },
                 "building/cathedral": {
                     "name": "Katedraalihoone"
@@ -2009,8 +3296,12 @@
                 "building/construction": {
                     "name": "Ehitusjärgus hoone"
                 },
+                "building/cowshed": {
+                    "name": "Lehmalaut"
+                },
                 "building/detached": {
-                    "name": "Eraldiseisev maja"
+                    "name": "Eraldiseisev maja",
+                    "terms": "üksikelamu,üksikmaja"
                 },
                 "building/dormitory": {
                     "name": "Ühiselamu"
@@ -2026,6 +3317,9 @@
                     "name": "Taluhoone",
                     "terms": "hoone,ait,abihoone,laut,küün"
                 },
+                "building/fire_station": {
+                    "name": "Tuletõrjedepoo"
+                },
                 "building/garage": {
                     "name": "Garaaž",
                     "terms": "garaaz"
@@ -2034,8 +3328,15 @@
                     "name": "Garaažid",
                     "terms": "garaazid"
                 },
+                "building/ger": {
+                    "name": "Jurta"
+                },
+                "building/grandstand": {
+                    "name": "Pealtvaatajate tribüün"
+                },
                 "building/greenhouse": {
-                    "name": "Kasvuhoone"
+                    "name": "Kasvuhoone",
+                    "terms": "triiphoone,kasvumaja"
                 },
                 "building/hangar": {
                     "name": "Angaar",
@@ -2048,12 +3349,17 @@
                     "name": "Hotellihoone"
                 },
                 "building/house": {
-                    "name": "Eluhoone",
-                    "terms": "eramu,üksik,eraldiseisev,maja"
+                    "name": "Eramu",
+                    "terms": "eramu,üksik,eraldiseisev,maja",
+                    "aliases": "Eluhoone\nEramaja\nIndividuaalelamu\nIndividuaalmaja"
+                },
+                "building/house/terraced": {
+                    "name": "Ridamaja boks",
+                    "terms": "ridaelamuboks,ridaelamu boks,ridaelamu hoone,terrassmaja hoone"
                 },
                 "building/houseboat": {
                     "name": "Paatmaja",
-                    "terms": "ujuv maja"
+                    "terms": "ujuv maja,parvmaja"
                 },
                 "building/hut": {
                     "name": "Hütt",
@@ -2062,9 +3368,24 @@
                 "building/industrial": {
                     "name": "Tööstushoone"
                 },
+                "building/kindergarten": {
+                    "name": "Lasteaiahoone"
+                },
+                "building/manufacture": {
+                    "name": "Tootmishoone"
+                },
+                "building/mosque": {
+                    "name": "Mošeehoone"
+                },
                 "building/office": {
                     "name": "Büroohoone",
                     "terms": "ärimaja,ärihoone,büroohoone,kontorihoone"
+                },
+                "building/outbuilding": {
+                    "name": "Kõrvalhoone"
+                },
+                "building/pavilion": {
+                    "name": "Paviljon"
                 },
                 "building/public": {
                     "name": "Avalik hoone"
@@ -2074,8 +3395,8 @@
                     "terms": "eramu"
                 },
                 "building/retail": {
-                    "name": "Kaubandushoone",
-                    "terms": "kaubandus,kaupl"
+                    "name": "Jaekaubandushoone",
+                    "terms": "kaubandus,kauplus"
                 },
                 "building/roof": {
                     "name": "Katus",
@@ -2094,6 +3415,7 @@
                     "terms": "elumajaosa,ridaelamu kahele leibkonnale"
                 },
                 "building/service": {
+                    "name": "Tehniliste teenuste hoone",
                     "terms": "tehnohoone"
                 },
                 "building/shed": {
@@ -2106,16 +3428,25 @@
                 "building/stadium": {
                     "name": "Staadionihoone"
                 },
+                "building/static_caravan": {
+                    "name": "Paikne haagismaja"
+                },
                 "building/sty": {
                     "name": "Sigala"
+                },
+                "building/synagogue": {
+                    "name": "Sünagoogi hoone"
                 },
                 "building/temple": {
                     "name": "Templihoone",
                     "terms": "tempel"
                 },
                 "building/terrace": {
-                    "name": "Ridaelamu",
-                    "terms": "terrassmaja,korter,paaris,rea"
+                    "name": "Ridamaja",
+                    "terms": "ridaelamu"
+                },
+                "building/train_station": {
+                    "name": "Raudteejaamahoone"
                 },
                 "building/transportation": {
                     "name": "Transpordihoone"
@@ -2124,7 +3455,8 @@
                     "name": "Ülikoolihoone"
                 },
                 "building/warehouse": {
-                    "name": "Laohoone"
+                    "name": "Laohoone",
+                    "terms": "ladu"
                 },
                 "building_part": {
                     "name": "Hoone osa"
@@ -2135,12 +3467,19 @@
                 "club": {
                     "name": "Klubi"
                 },
+                "club/sport": {
+                    "name": "Spordiklubi"
+                },
                 "craft": {
                     "name": "Käsitöö",
                     "terms": "meister,oskustöö"
                 },
+                "craft/agricultural_engines": {
+                    "name": "Põllumajandusmasinate mootorite mehaanik"
+                },
                 "craft/basket_maker": {
-                    "name": "Korvimeister"
+                    "name": "Korvipunuja",
+                    "terms": "korvimeister"
                 },
                 "craft/beekeeper": {
                     "name": "Mesinik"
@@ -2149,20 +3488,39 @@
                     "name": "Sepikoda"
                 },
                 "craft/boatbuilder": {
-                    "name": "Paadiehitaja"
+                    "name": "Paadiehitaja",
+                    "terms": "paadimeister"
                 },
                 "craft/bookbinder": {
                     "name": "Raamatuköitja"
+                },
+                "craft/brewery": {
+                    "name": "Pruulikoda"
                 },
                 "craft/carpenter": {
                     "name": "Tisler",
                     "terms": "puusepp,puussepp"
                 },
+                "craft/carpet_layer": {
+                    "name": "Vaibapaigaldaja"
+                },
                 "craft/caterer": {
                     "name": "Toitlustaja"
                 },
+                "craft/chimney_sweeper": {
+                    "name": "Korstnapühkija"
+                },
+                "craft/cleaning": {
+                    "name": "Koristusteenused"
+                },
                 "craft/clockmaker": {
                     "name": "Kellassepp"
+                },
+                "craft/confectionery": {
+                    "name": "Kondiiter"
+                },
+                "craft/distillery": {
+                    "name": "Destilleerimisettevõte"
                 },
                 "craft/dressmaker": {
                     "name": "Rätsep",
@@ -2174,12 +3532,18 @@
                 "craft/electronics_repair": {
                     "name": "Elektroonikaparandus"
                 },
+                "craft/floorer": {
+                    "name": "Põrandameister"
+                },
                 "craft/gardener": {
                     "name": "Aednik"
                 },
                 "craft/glaziery": {
                     "name": "Klaasissepp",
-                    "terms": "klaasimesiter"
+                    "terms": "klaasimeister,aknaklaasija"
+                },
+                "craft/handicraft": {
+                    "name": "Käsitöömeister"
                 },
                 "craft/hvac": {
                     "name": "Kliimatehnik"
@@ -2188,16 +3552,27 @@
                     "name": "Soojustaja",
                     "terms": "isoleerija,isolatsioon"
                 },
+                "craft/joiner": {
+                    "name": "Tisler",
+                    "aliases": "Laudsepp"
+                },
                 "craft/key_cutter": {
                     "name": "Võtmemeister",
-                    "terms": "võtmeabi,võtmete valmistamine"
+                    "terms": "võtmeabi,võtmete valmistamine",
+                    "aliases": "Võtmevalmistaja"
                 },
                 "craft/locksmith": {
                     "name": "Lukuabi"
                 },
+                "craft/metal_construction": {
+                    "name": "Mettallimeister"
+                },
                 "craft/painter": {
                     "name": "Maaler",
                     "terms": "värvija"
+                },
+                "craft/parquet_layer": {
+                    "name": "Parketipaigaldaja"
                 },
                 "craft/photographer": {
                     "name": "Fotograaf",
@@ -2212,8 +3587,13 @@
                     "terms": "kellumees"
                 },
                 "craft/plumber": {
-                    "name": "Santehnik",
-                    "terms": "toruabi"
+                    "name": "Torulukksepp",
+                    "terms": "toruabi",
+                    "aliases": "Santehnik"
+                },
+                "craft/pottery": {
+                    "name": "Pottsepp",
+                    "aliases": "Keraamika valmistaja"
                 },
                 "craft/rigger": {
                     "name": "Taglasemeister"
@@ -2225,13 +3605,23 @@
                     "name": "Sadulsepp"
                 },
                 "craft/sailmaker": {
-                    "name": "Purjemeister"
+                    "name": "Purjemeister",
+                    "aliases": "Taglastaja\nPurjesepp"
                 },
                 "craft/sawmill": {
                     "name": "Saekaater"
                 },
+                "craft/scaffolder": {
+                    "name": "Tellingute valmistaja"
+                },
+                "craft/sculptor": {
+                    "name": "Skulptor"
+                },
                 "craft/shoemaker": {
                     "name": "Kingsepp"
+                },
+                "craft/signmaker": {
+                    "name": "Sildimeister"
                 },
                 "craft/stonemason": {
                     "name": "Kiviraidur"
@@ -2259,6 +3649,12 @@
                 "craft/winery": {
                     "name": "Veinitehas"
                 },
+                "demolished/building": {
+                    "name": "Hiljuti lammutatud hoome"
+                },
+                "disused/shop": {
+                    "name": "Lõplikult suletud pood"
+                },
                 "embankment": {
                     "name": "Teetamm"
                 },
@@ -2269,8 +3665,11 @@
                     "name": "Hüdrant",
                     "terms": "tulehüdrant"
                 },
+                "emergency/lifeboat_station": {
+                    "name": "Merepäästejaam"
+                },
                 "emergency/phone": {
-                    "name": "Hädaabi telefon"
+                    "name": "Kiirabi telefon"
                 },
                 "emergency/water_tank": {
                     "name": "Tuletõrjevee mahuti",
@@ -2318,11 +3717,17 @@
                 "healthcare/midwife": {
                     "name": "Ämmaemand"
                 },
+                "healthcare/sample_collection": {
+                    "name": "Proovide kogumispunkt"
+                },
                 "highway/bridleway": {
                     "name": "Ratsutamisrada"
                 },
                 "highway/bus_stop": {
                     "name": "Bussipeatus"
+                },
+                "highway/construction": {
+                    "name": "Ehitusjärgus tee"
                 },
                 "highway/corridor": {
                     "name": "Sisekoridor",
@@ -2330,6 +3735,12 @@
                 },
                 "highway/crossing": {
                     "name": "Ülekäik"
+                },
+                "highway/crossing/uncontrolled": {
+                    "name": "Märgistatud ülekäik"
+                },
+                "highway/crossing/unmarked": {
+                    "name": "Märgistamata ülekäik"
                 },
                 "highway/cycleway": {
                     "name": "Rattatee"
@@ -2352,6 +3763,15 @@
                 "highway/footway/crossing": {
                     "name": "Jalakäija ülekäik"
                 },
+                "highway/footway/crossing/uncontrolled": {
+                    "name": "Märgistatud ülekäik"
+                },
+                "highway/footway/crossing/unmarked": {
+                    "name": "Märgistamata ülekäik"
+                },
+                "highway/footway/informal": {
+                    "name": "Mitteametlik jalgtee"
+                },
                 "highway/footway/sidewalk": {
                     "name": "Kõnnitee"
                 },
@@ -2361,6 +3781,10 @@
                 "highway/living_street": {
                     "name": "Õueala tee",
                     "terms": "majadevaheline,elutänav,elamu,linna"
+                },
+                "highway/milestone": {
+                    "name": "Kilomeetritähis",
+                    "aliases": "Kilomeetripost\nKilomeetritulp\nMiilitähis"
                 },
                 "highway/mini_roundabout": {
                     "name": "Väike ringtee"
@@ -2385,12 +3809,30 @@
                     "name": "Laudtee",
                     "terms": "puidust tee"
                 },
+                "highway/path/informal": {
+                    "name": "Mitteametlik rada"
+                },
+                "highway/pedestrian_area": {
+                    "name": "Jalakäijate tänav või ala"
+                },
+                "highway/pedestrian_line": {
+                    "name": "Jalakäijate tänav"
+                },
                 "highway/primary": {
                     "name": "Põhimaantee",
                     "terms": "maantee"
                 },
                 "highway/primary_link": {
                     "name": "Põhimaantee ühenduslõik"
+                },
+                "highway/raceway": {
+                    "name": "Motospordi rada"
+                },
+                "highway/raceway/karting": {
+                    "name": "Kardirada"
+                },
+                "highway/raceway/motocross": {
+                    "name": "Motokrossi rada"
                 },
                 "highway/residential": {
                     "name": "Elamupiikonna tänav"
@@ -2401,6 +3843,9 @@
                 "highway/road": {
                     "name": "Teadmata tee",
                     "terms": "tee,väike tee"
+                },
+                "highway/road/bridge": {
+                    "name": "Silla tüüp pole teada"
                 },
                 "highway/secondary": {
                     "name": "Tugimaantee",
@@ -2442,6 +3887,9 @@
                 "highway/steps": {
                     "name": "Trepp",
                     "terms": "astmed"
+                },
+                "highway/steps/conveying": {
+                    "name": "Eskalaator"
                 },
                 "highway/stop": {
                     "name": "Stoppmärk"
@@ -2493,10 +3941,13 @@
                     "name": "Ajalooline koht"
                 },
                 "historic/archaeological_site": {
-                    "name": "Arheoloogiline koht"
+                    "name": "Arheoloogiline objekt"
                 },
                 "historic/boundary_stone": {
-                    "name": "Piirikivi"
+                    "name": "Ajalooline piirikivi"
+                },
+                "historic/building": {
+                    "name": "Ajalooline hoone"
                 },
                 "historic/castle": {
                     "name": "Loss",
@@ -2515,10 +3966,11 @@
                     "terms": "loss,häärber,mõis,peahoone,esindus,mõisniku,aadli,kõrgaadli"
                 },
                 "historic/city_gate": {
-                    "name": "Linnavärav"
+                    "name": "Linnavärav",
+                    "terms": "lossivärav,vallivärav"
                 },
                 "historic/fort": {
-                    "name": "Kindlus",
+                    "name": "Ajalooline kindlusehitis",
                     "terms": "kindlustus,loss,kaitse,fortifikatsioon,fort"
                 },
                 "historic/manor": {
@@ -2528,6 +3980,10 @@
                 "historic/memorial": {
                     "name": "Mälestusmärk",
                     "terms": "memoriaal"
+                },
+                "historic/memorial/plaque": {
+                    "name": "Mälestustahvel",
+                    "terms": "memoriaaltahvel,mälestusplaat"
                 },
                 "historic/monument": {
                     "name": "Monument",
@@ -2590,6 +4046,10 @@
                 "landuse/grass": {
                     "name": "Muru"
                 },
+                "landuse/greenhouse_horticulture": {
+                    "name": "Kasvuhoonete ala",
+                    "terms": "taimekasvatus kasvuhoonetes"
+                },
                 "landuse/harbour": {
                     "name": "Sadam",
                     "terms": "jahisadam,paadisadam,laevasadam"
@@ -2623,7 +4083,8 @@
                     "name": "Kasarmu"
                 },
                 "landuse/military/danger_area": {
-                    "name": "Militaarohu ala"
+                    "name": "Sõjaväe ohuala",
+                    "terms": "sõjaline ohuala,polügon,polügoon,õppuste ala,lahinglaskmine,lahinglaskmised,sõjaväe õppused"
                 },
                 "landuse/orchard": {
                     "name": "Viljapuuaed"
@@ -2661,12 +4122,25 @@
                 "landuse/vineyard": {
                     "name": "Viinapuuaed"
                 },
+                "leisure/adult_gaming_centre": {
+                    "name": "Mänguautomaadisaal"
+                },
                 "leisure/amusement_arcade": {
-                    "name": "Videomängumasin",
+                    "name": "Videomängusaal",
                     "terms": "telekamäng,mängukonsool"
+                },
+                "leisure/bandstand": {
+                    "name": "Väike vabaõhulava"
                 },
                 "leisure/beach_resort": {
                     "name": "Rannakuurort"
+                },
+                "leisure/bird_hide": {
+                    "name": "Linnuvaatlushoone"
+                },
+                "leisure/bleachers": {
+                    "name": "Avaistmed",
+                    "terms": "istumiskohad,tribüün,pingid,vaatajakohad"
                 },
                 "leisure/bowling_alley": {
                     "name": "Boolingusaal",
@@ -2679,11 +4153,28 @@
                 "leisure/dancing_school": {
                     "name": "Tantsukool"
                 },
+                "leisure/disc_golf_course": {
+                    "name": "Kettagolfiväljak"
+                },
                 "leisure/dog_park": {
                     "name": "Koerapark"
                 },
+                "leisure/escape_game": {
+                    "name": "Põgenemismängude tuba"
+                },
+                "leisure/firepit": {
+                    "name": "Lõkkease",
+                    "terms": "lõkkekoht"
+                },
+                "leisure/fishing": {
+                    "name": "Kalapüügikoht"
+                },
+                "leisure/fitness_centre": {
+                    "name": "Jõusaal",
+                    "terms": "treeningsaal"
+                },
                 "leisure/fitness_centre/yoga": {
-                    "name": "Jooga stuudio"
+                    "name": "Joogastuudio"
                 },
                 "leisure/garden": {
                     "name": "Aed"
@@ -2697,6 +4188,9 @@
                 },
                 "leisure/golf_course": {
                     "name": "Golfiväljak"
+                },
+                "leisure/horse_riding": {
+                    "name": "Ratsakeskus"
                 },
                 "leisure/ice_rink": {
                     "name": "Uisuväljak"
@@ -2713,11 +4207,18 @@
                     "name": "Looduskaitseala",
                     "terms": "maastikukaitseala,looduspark"
                 },
+                "leisure/outdoor_seating": {
+                    "name": "Väliistekohade ala"
+                },
                 "leisure/park": {
-                    "name": "Park"
+                    "name": "Park",
+                    "terms": "suveaed,puiestik,lastepark,mõisapark,linnapark,metsapark"
                 },
                 "leisure/picnic_table": {
                     "name": "Piknikulaud"
+                },
+                "leisure/picnic_table/chess": {
+                    "name": "Malelaud"
                 },
                 "leisure/pitch": {
                     "name": "Spordiväljak"
@@ -2725,11 +4226,39 @@
                 "leisure/pitch/american_football": {
                     "name": "Ameerika jalgpalliväljak"
                 },
+                "leisure/pitch/american_handball": {
+                    "name": "Ameerika käsipalliväljak"
+                },
+                "leisure/pitch/badminton": {
+                    "name": "Sulgpalliväljak"
+                },
+                "leisure/pitch/baseball": {
+                    "name": "Pesapalliväljak"
+                },
                 "leisure/pitch/basketball": {
                     "name": "Korvpalliväljak"
                 },
+                "leisure/pitch/beachvolleyball": {
+                    "name": "Rannavõrkpalli väljak",
+                    "aliases": "Rannavolle väljak"
+                },
                 "leisure/pitch/cricket": {
                     "name": "Kriketiväljak"
+                },
+                "leisure/pitch/futsal": {
+                    "name": "Saalijalgpalli väljak"
+                },
+                "leisure/pitch/handball": {
+                    "name": "Käsipalliväljak"
+                },
+                "leisure/pitch/rugby_league": {
+                    "name": "Ragbiväljak (liigareeglite alusel)"
+                },
+                "leisure/pitch/rugby_union": {
+                    "name": "Ragbiväljak (liidureeglite alusel)"
+                },
+                "leisure/pitch/shooting": {
+                    "name": "Lasketiir"
                 },
                 "leisure/pitch/skateboard": {
                     "name": "Rulapark",
@@ -2761,6 +4290,9 @@
                 "leisure/slipway": {
                     "name": "Slipp",
                     "terms": "slipp,väikesadam"
+                },
+                "leisure/slipway_drivable": {
+                    "name": "Slipp koos juurdepääsuteega"
                 },
                 "leisure/sports_centre": {
                     "name": "Spordikeskus",
@@ -2815,6 +4347,18 @@
                     "name": "Lainemurdja",
                     "terms": "sadamatamm,kaitsetamm,tamm"
                 },
+                "man_made/bunker_silo": {
+                    "name": "Siloauk",
+                    "aliases": "Silohoidla"
+                },
+                "man_made/cairn": {
+                    "name": "Kivikangur",
+                    "aliases": "Kiviraun\nKivikuhjatis\nKivikuhelik"
+                },
+                "man_made/charge_point": {
+                    "name": "Laadimispunkt",
+                    "terms": "elektriautode laadimine,kiirlaadimisvõrk,kiirlaadimispunkt,elektriautode kiirlaadija"
+                },
                 "man_made/chimney": {
                     "name": "Korsten"
                 },
@@ -2822,8 +4366,26 @@
                     "name": "Raiesmik",
                     "terms": "lageraie,raiestik,kännustik"
                 },
+                "man_made/compass_rose": {
+                    "name": "Tuulteroos",
+                    "terms": "tuulteroos,kompassiroos",
+                    "aliases": "Kompassiroos"
+                },
+                "man_made/courtyard": {
+                    "name": "Sisehoov",
+                    "aliases": "Siseõu\nEtik"
+                },
                 "man_made/crane": {
                     "name": "Kraana"
+                },
+                "man_made/crane/gantry_crane": {
+                    "name": "Portaalkraana"
+                },
+                "man_made/crane/portal_crane": {
+                    "name": "Sildkraana"
+                },
+                "man_made/cross": {
+                    "name": "Rist"
                 },
                 "man_made/cutline": {
                     "name": "Siht",
@@ -2832,14 +4394,31 @@
                 "man_made/dovecote": {
                     "name": "Tuvimaja"
                 },
+                "man_made/dyke": {
+                    "name": "Kaldavall"
+                },
                 "man_made/embankment": {
-                    "name": "Tamm"
+                    "name": "Muldkeha",
+                    "aliases": "Tamm"
                 },
                 "man_made/flagpole": {
                     "name": "Lipumast"
                 },
+                "man_made/gantry": {
+                    "name": "Signaalsild"
+                },
+                "man_made/gasometer": {
+                    "name": "Gaasihoidla hoone"
+                },
+                "man_made/goods_conveyor": {
+                    "name": "Puistekaupade konveier"
+                },
+                "man_made/groyne": {
+                    "name": "Kaldatamm"
+                },
                 "man_made/lighthouse": {
-                    "name": "Tuletorn"
+                    "name": "Tuletorn",
+                    "terms": "majakas"
                 },
                 "man_made/manhole": {
                     "name": "Teeninduskaev",
@@ -2871,6 +4450,37 @@
                     "name": "Mast",
                     "terms": "mobiilimast,tv mast,telefonimast,raadiomast,televisioonimast,kommunikatsioonimast"
                 },
+                "man_made/mast/communication": {
+                    "name": "Sidemast",
+                    "terms": "sidevõrgu mast,raadioside mast"
+                },
+                "man_made/mast/communication/mobile_phone": {
+                    "name": "Mobiilimast",
+                    "terms": "sidemast,mobiiltelefonimast,mobiiltelefonivõrgu  mast,mobiiliside mast"
+                },
+                "man_made/mast/communication/radio": {
+                    "name": "Raadiomast",
+                    "terms": "ringhäälingumast"
+                },
+                "man_made/mast/communication/television": {
+                    "name": "Telemast",
+                    "terms": "ringhäälingumast"
+                },
+                "man_made/mast/lighting": {
+                    "name": "Valgustustorn"
+                },
+                "man_made/milk_churn_stand": {
+                    "name": "Piimapukk"
+                },
+                "man_made/mineshaft": {
+                    "name": "Kaevanduskäik"
+                },
+                "man_made/monitoring_station": {
+                    "name": "Seirejaam"
+                },
+                "man_made/obelisk": {
+                    "name": "Obelisk"
+                },
                 "man_made/observatory": {
                     "name": "Observatoorium"
                 },
@@ -2878,7 +4488,8 @@
                     "name": "Nafta puurkaev"
                 },
                 "man_made/pier": {
-                    "name": "Kai"
+                    "name": "Kai (kerge kai ehk pulvärk)",
+                    "terms": "paadikai,pulvärk,laevasild,randumissild"
                 },
                 "man_made/pier/floating": {
                     "name": "Ujuvkai",
@@ -2886,6 +4497,19 @@
                 },
                 "man_made/pipeline": {
                     "name": "Torujuhe"
+                },
+                "man_made/pipeline/underground": {
+                    "name": "Maaalune torujuhe"
+                },
+                "man_made/planter": {
+                    "name": "Linnamööbli taimepott"
+                },
+                "man_made/pumping_station": {
+                    "name": "Pumpla"
+                },
+                "man_made/quay": {
+                    "name": "Kai (sadamakai)",
+                    "terms": "sadamakai,sadamasild"
                 },
                 "man_made/silo": {
                     "name": "Silo",
@@ -2898,11 +4522,17 @@
                     "name": "Valvekaamera",
                     "terms": "turvakaamera,cctv"
                 },
+                "man_made/torii": {
+                    "name": "Torii (šinto templi värav)"
+                },
                 "man_made/tower": {
                     "name": "Torn"
                 },
                 "man_made/tower/bell_tower": {
                     "name": "Kellatorn"
+                },
+                "man_made/tower/communication": {
+                    "name": "Sidetorn"
                 },
                 "man_made/tower/cooling": {
                     "name": "Jahutustorn",
@@ -2912,14 +4542,28 @@
                     "name": "Kindlustorn",
                     "terms": "torn,kaitse"
                 },
+                "man_made/tower/diving": {
+                    "name": "Vettehüppetorn",
+                    "aliases": "Vettehüppesild"
+                },
+                "man_made/tower/minaret": {
+                    "name": "Minarett"
+                },
                 "man_made/tower/observation": {
                     "name": "Vaatlustorn"
                 },
                 "man_made/tower/pagoda": {
                     "name": "Pagood"
                 },
+                "man_made/video_wall": {
+                    "name": "Videosein",
+                    "aliases": "Videoekraan\nDigiekraan"
+                },
                 "man_made/wastewater_plant": {
                     "name": "Reoveepuhastusjaam"
+                },
+                "man_made/water_tap": {
+                    "name": "Avalik joogiveekraan"
                 },
                 "man_made/water_tower": {
                     "name": "Veetorn"
@@ -2942,6 +4586,9 @@
                     "name": "Tehas",
                     "terms": "vabrik"
                 },
+                "man_made/works/brewery": {
+                    "name": "Õlletööstus"
+                },
                 "natural/bare_rock": {
                     "name": "Paljand",
                     "terms": "kivi paljand"
@@ -2955,7 +4602,7 @@
                 },
                 "natural/cape": {
                     "name": "Neem",
-                    "terms": "maanina,poolsaar"
+                    "terms": "maanina,nina,neemik"
                 },
                 "natural/cave_entrance": {
                     "name": "Koopa sissepääs",
@@ -2996,6 +4643,9 @@
                 "natural/peak": {
                     "name": "Mäetipp",
                     "terms": "tipp"
+                },
+                "natural/peninsula": {
+                    "name": "Poolsaar"
                 },
                 "natural/reef": {
                     "name": "Kari",
@@ -3038,8 +4688,36 @@
                     "name": "Lahtine kivirahn",
                     "terms": "kivi,rändrahn,rahn"
                 },
+                "natural/strait": {
+                    "name": "Väin",
+                    "terms": "merekitsus,kurk"
+                },
                 "natural/tree": {
                     "name": "Puu"
+                },
+                "natural/tree/broadleaved": {
+                    "name": "Lehtpuu"
+                },
+                "natural/tree/broadleaved/deciduous": {
+                    "name": "Lehtpuu (heitlehine)"
+                },
+                "natural/tree/broadleaved/evergreen": {
+                    "name": "Lehtpuu (igihaljas)"
+                },
+                "natural/tree/needleleaved": {
+                    "name": "Okaspuu"
+                },
+                "natural/tree/needleleaved/deciduous": {
+                    "name": "Okaspuu (heitlehine)"
+                },
+                "natural/tree/needleleaved/evergreen": {
+                    "name": "Okaspuu (igihaljas)"
+                },
+                "natural/tree_row": {
+                    "name": "Puude rivi"
+                },
+                "natural/tree_stump": {
+                    "name": "Känd"
                 },
                 "natural/valley": {
                     "name": "Org",
@@ -3061,6 +4739,10 @@
                     "name": "Vallikraav",
                     "terms": "kaitsekraav,kraav"
                 },
+                "natural/water/oxbow": {
+                    "name": "Soot",
+                    "aliases": "Koold\nJõekoold\nVanajõgi\nStruuga\nJõekäärujärv"
+                },
                 "natural/water/pond": {
                     "name": "Tiik"
                 },
@@ -3077,8 +4759,11 @@
                     "terms": "roostik"
                 },
                 "natural/wetland/bog": {
-                    "name": "Soo",
+                    "name": "Raba",
                     "terms": "raba,kõrgsoo"
+                },
+                "natural/wetland/fen": {
+                    "name": "Madalsoo"
                 },
                 "natural/wetland/mangrove": {
                     "name": "Mangroov",
@@ -3091,6 +4776,12 @@
                 "natural/wetland/reedbed": {
                     "name": "Roostik",
                     "terms": "kõrkjad,võsa,rand"
+                },
+                "natural/wetland/saltmarsh": {
+                    "name": "Sooldunud padur rannikul"
+                },
+                "natural/wetland/string_bog": {
+                    "name": "Aabasoo"
                 },
                 "natural/wetland/swamp": {
                     "name": "Lodu",
@@ -3138,8 +4829,15 @@
                 "place/city": {
                     "name": "Linn"
                 },
+                "place/city_block": {
+                    "name": "Tänavatevaheline kvartal"
+                },
                 "place/farm": {
-                    "name": "farm"
+                    "name": "Talu"
+                },
+                "place/hamlet": {
+                    "name": "Väike küla",
+                    "terms": "külake"
                 },
                 "place/island": {
                     "name": "Saar"
@@ -3148,8 +4846,18 @@
                     "name": "Laid",
                     "terms": "saareke,rahu,kari"
                 },
+                "place/isolated_dwelling": {
+                    "name": "Üksik eluhoone"
+                },
+                "place/locality": {
+                    "name": "Paikkond"
+                },
                 "place/plot": {
                     "name": "Krunt"
+                },
+                "place/square": {
+                    "name": "Väljak",
+                    "aliases": "Plats"
                 },
                 "place/suburb": {
                     "name": "Eeslinn",
@@ -3160,6 +4868,13 @@
                 },
                 "place/village": {
                     "name": "Küla"
+                },
+                "playground/playhouse": {
+                    "name": "Mängumaja"
+                },
+                "playground/teenshelter": {
+                    "name": "Noorte varjupaik",
+                    "terms": "noorte turvakodu"
                 },
                 "point": {
                     "name": "Punkt",
@@ -3290,11 +5005,20 @@
                 "shop/alcohol": {
                     "name": "Alkoholipood"
                 },
+                "shop/anime": {
+                    "name": "Mangapood"
+                },
+                "shop/antiques": {
+                    "name": "Antikvariaat"
+                },
+                "shop/appliance": {
+                    "name": "Kodumasinate pood"
+                },
                 "shop/art": {
                     "name": "Kunstitarvete kauplus"
                 },
                 "shop/baby_goods": {
-                    "name": "Beebipood",
+                    "name": "Beebikaupade pood",
                     "terms": "lastepood,tita pood"
                 },
                 "shop/bag": {
@@ -3330,19 +5054,35 @@
                     "name": "Rattapood",
                     "terms": "spordipood"
                 },
+                "shop/boat": {
+                    "name": "Paadipood",
+                    "terms": "paadid,kaatrid,jahid"
+                },
                 "shop/bookmaker": {
                     "name": "Trükkal",
                     "terms": "köitmiskoda,trükikoda,raamatutrükikoda,köitja"
                 },
+                "shop/books": {
+                    "name": "Raamatupood"
+                },
                 "shop/boutique": {
                     "name": "Butiik"
+                },
+                "shop/brewing_supplies": {
+                    "name": "Pruulitarvikute pood"
                 },
                 "shop/butcher": {
                     "name": "Lihapood",
                     "terms": "lihunik"
                 },
+                "shop/camera": {
+                    "name": "Fotokaamera tarvikute pood"
+                },
                 "shop/candles": {
                     "name": "Küünlapood"
+                },
+                "shop/cannabis": {
+                    "name": "Kanepipood"
                 },
                 "shop/car": {
                     "name": "Autopood",
@@ -3384,6 +5124,24 @@
                     "name": "Riidepood",
                     "terms": "moekauplus"
                 },
+                "shop/clothes/second_hand": {
+                    "name": "Kasutatud riiete pood",
+                    "aliases": "Kasutatud rõivaste pood\nKasutatud riiete kauplus\nKasutatud rõivaste kauplus"
+                },
+                "shop/clothes/suits": {
+                    "name": "Ülikonnapood"
+                },
+                "shop/clothes/underwear": {
+                    "name": "Pesupood"
+                },
+                "shop/clothes/wedding": {
+                    "name": "Pulmarõivaste pood"
+                },
+                "shop/clothes/workwear": {
+                    "name": "Tööriiete pood",
+                    "terms": "tööriided,tunked,töösaapad",
+                    "aliases": "Töörõivaste pood"
+                },
                 "shop/coffee": {
                     "name": "Kohvipood"
                 },
@@ -3408,12 +5166,22 @@
                     "name": "Kosmeetikapood",
                     "terms": "moekauplus"
                 },
+                "shop/country_store": {
+                    "name": "Maarahva pood",
+                    "aliases": "Talutarvikute pood"
+                },
+                "shop/craft": {
+                    "name": "Käsitöö ja kunstikauplus"
+                },
                 "shop/curtain": {
                     "name": "Kardinakauplus"
                 },
                 "shop/dairy": {
                     "name": "Piimapood",
                     "terms": "meierei kauplus,piimatoodete kauplus"
+                },
+                "shop/deli": {
+                    "name": "Kulinaariapood"
                 },
                 "shop/department_store": {
                     "name": "Kaubamaja",
@@ -3443,6 +5211,9 @@
                     "name": "Erootikapood",
                     "terms": "seksipood,seksitarbed"
                 },
+                "shop/erotic/lgbtq": {
+                    "name": "LGBTQ+ erootikapood"
+                },
                 "shop/fabric": {
                     "name": "Kangakauplus",
                     "terms": "kangapood"
@@ -3454,12 +5225,19 @@
                 "shop/fashion": {
                     "name": "Moekauplus"
                 },
+                "shop/fashion_accessories": {
+                    "name": "Moeaksessuaaride kauplus",
+                    "aliases": "Moe aksessuaaride pood"
+                },
                 "shop/fireplace": {
                     "name": "Küttekollete pood",
                     "terms": "kaminad,ahjud,katlad"
                 },
                 "shop/fishing": {
                     "name": "Kalastustarvete pood"
+                },
+                "shop/flooring": {
+                    "name": "Põrandatarvikute pood"
                 },
                 "shop/florist": {
                     "name": "Lillepood",
@@ -3468,6 +5246,9 @@
                 "shop/frame": {
                     "name": "Raamikauplus",
                     "terms": "piltide raamimine,maali raamimine"
+                },
+                "shop/frozen_food": {
+                    "name": "Sügavkülmutatud toidu pood"
                 },
                 "shop/fuel": {
                     "name": "Küttepood",
@@ -3479,6 +5260,11 @@
                 },
                 "shop/furniture": {
                     "name": "Mööblipood"
+                },
+                "shop/games": {
+                    "name": "Lauamängude pood",
+                    "terms": "lauamängude pood,lauamängude kauplus",
+                    "aliases": "Lauamängude kauplus"
                 },
                 "shop/garden_centre": {
                     "name": "Aianduskeskus",
@@ -3502,9 +5288,16 @@
                 "shop/hairdresser": {
                     "name": "Juuksurisalong"
                 },
+                "shop/hairdresser_supply": {
+                    "name": "Juuksuritarvikute pood"
+                },
                 "shop/hardware": {
                     "name": "Rauakauplus",
                     "terms": "tööriistad,kinnitusvahendid"
+                },
+                "shop/health_food": {
+                    "name": "Tervisliku toidu kauplus",
+                    "aliases": "Tervisliku toidu pood"
                 },
                 "shop/hearing_aids": {
                     "name": "Kuulmisabipood"
@@ -3517,6 +5310,13 @@
                     "name": "Hifi kauplus",
                     "terms": "hi-fi,high fidelity,loomutruu,helitehnika"
                 },
+                "shop/honey": {
+                    "name": "Meepood"
+                },
+                "shop/household_linen": {
+                    "name": "Kodutekstiilipood",
+                    "terms": "rätikupood,voodipesupood,rätikud,rätik,saunalina,köögirätik"
+                },
                 "shop/houseware": {
                     "name": "Kodutarvete kauplus",
                     "terms": "köögitabed,majapidamistarbed"
@@ -3528,6 +5328,13 @@
                     "name": "Sisedekoratsioonikauplus",
                     "terms": "dekoratsioonid,kaunistus"
                 },
+                "shop/jewelry": {
+                    "name": "Ehtepood",
+                    "aliases": "Juveelipood"
+                },
+                "shop/kiosk": {
+                    "name": "Kiosk"
+                },
                 "shop/kitchen": {
                     "name": "Köögimööblikauplus",
                     "terms": "köögimööblistuudio,köögistuudio"
@@ -3535,9 +5342,15 @@
                 "shop/laundry": {
                     "name": "Pesumaja"
                 },
+                "shop/laundry/self_service": {
+                    "name": "Iseteeninduslik pesumaja"
+                },
                 "shop/leather": {
                     "name": "Nahakauplus",
                     "terms": "nahast,karusnahk"
+                },
+                "shop/lighting": {
+                    "name": "Lambipood"
                 },
                 "shop/locksmith": {
                     "name": "Lukksepp",
@@ -3545,14 +5358,15 @@
                 },
                 "shop/lottery": {
                     "name": "Lotopood",
-                    "terms": "loterii"
+                    "terms": "loterii",
+                    "aliases": "Lotokiosk"
                 },
                 "shop/mall": {
                     "name": "Kaubanduskeskus",
                     "terms": "kauplus,pood,shoppamine,poekompleks"
                 },
                 "shop/massage": {
-                    "name": "Massaaž",
+                    "name": "Massaažisalong",
                     "terms": "massaaz"
                 },
                 "shop/medical_supply": {
@@ -3582,8 +5396,15 @@
                     "name": "Muusikainstrumentide kauplus",
                     "terms": "pillipood,pillid"
                 },
+                "shop/newsagent": {
+                    "name": "Lehekiosk",
+                    "aliases": "Ajalehekiosk"
+                },
                 "shop/nutrition_supplements": {
                     "name": "Toidulisandite kauplus"
+                },
+                "shop/nuts": {
+                    "name": "Pähklipood"
                 },
                 "shop/optician": {
                     "name": "Optikapood",
@@ -3596,9 +5417,20 @@
                 "shop/paint": {
                     "name": "Värvipood"
                 },
+                "shop/party": {
+                    "name": "Peotarvikute pood",
+                    "aliases": "Peotarvikute kauplus"
+                },
+                "shop/pasta": {
+                    "name": "Pastapood",
+                    "terms": "värske pasta,ravioli,spagetti,spagett,makaron"
+                },
                 "shop/pastry": {
                     "name": "Kondiiter",
                     "terms": "koogid,tordid"
+                },
+                "shop/pawnbroker": {
+                    "name": "Pandimaja"
                 },
                 "shop/perfumery": {
                     "name": "Parfüümikauplus",
@@ -3612,6 +5444,16 @@
                     "name": "Fotograafiapood",
                     "terms": "fotopood,fototarbed,pildid,fotod,ilmutus"
                 },
+                "shop/pottery": {
+                    "name": "Keraamikapood"
+                },
+                "shop/printer_ink": {
+                    "name": "Printeritindi pood"
+                },
+                "shop/psychic": {
+                    "name": "Kaardimoor",
+                    "aliases": "Ennustaja\nKaardipanija\nKäevaataja"
+                },
                 "shop/pyrotechnics": {
                     "name": "Ilutulestiku kauplus",
                     "terms": "pürotehnika"
@@ -3624,6 +5466,10 @@
                     "name": "Usutarvete kauplus",
                     "terms": "kirikupood,usupood,pühatarvete,sakraal"
                 },
+                "shop/rice": {
+                    "name": "Riisipood",
+                    "terms": "pikateraline riis,jasmiiniriis,basmatiriis"
+                },
                 "shop/scuba_diving": {
                     "name": "Sukeldustarvikute kauplus",
                     "terms": "sukelduskeskus,sukeldumine,snorkeldamine"
@@ -3632,8 +5478,19 @@
                     "name": "Kalapood",
                     "terms": "mereannid"
                 },
+                "shop/sewing": {
+                    "name": "Õmblustarvikute pood",
+                    "aliases": "Õmblustarvikute kauplus"
+                },
+                "shop/shoe_repair": {
+                    "name": "Kingaparandus"
+                },
                 "shop/shoes": {
                     "name": "Kingapood"
+                },
+                "shop/spices": {
+                    "name": "Maitseainete pood",
+                    "aliases": "Vürtsipood"
                 },
                 "shop/sports": {
                     "name": "Sporditarvete pood",
@@ -3643,8 +5500,21 @@
                     "name": "Kirjatarvete kauplus",
                     "terms": "kirjutusvahendid,büroovahendid,paberipood"
                 },
+                "shop/storage_rental": {
+                    "name": "Miniladu",
+                    "aliases": "Väike rendiladu"
+                },
                 "shop/supermarket": {
-                    "name": "Supermarket"
+                    "name": "Supermarket",
+                    "terms": "kaubahall,selvehall,hüpermarket"
+                },
+                "shop/supermarket/organic": {
+                    "name": "Mahe supermarket",
+                    "aliases": "Öko supermarket"
+                },
+                "shop/swimming_pool": {
+                    "name": "Basseinitarvikute pood",
+                    "aliases": "Basseinitarvikute kauplus"
                 },
                 "shop/tailor": {
                     "name": "Rätsep",
@@ -3666,9 +5536,17 @@
                     "name": "Piletikauplus",
                     "terms": "piletid,kontserdipiletid,kassa,bussipiletid"
                 },
+                "shop/tiles": {
+                    "name": "Plaadipood",
+                    "aliases": "Keraamiliste plaatide pood"
+                },
                 "shop/tobacco": {
                     "name": "Tubakapood",
                     "terms": "suitsupood,tubakas,sigarid,sigaretid"
+                },
+                "shop/tool_hire": {
+                    "name": "Tööriistade laenutus",
+                    "aliases": "Tööriistade rent"
                 },
                 "shop/toys": {
                     "name": "Mänguasjapood",
@@ -3677,6 +5555,9 @@
                 "shop/travel_agency": {
                     "name": "Reisibüroo",
                     "terms": "reisiagentuur"
+                },
+                "shop/trophy": {
+                    "name": "Auhindade kauplus"
                 },
                 "shop/tyres": {
                     "name": "Rehvipood",
@@ -3713,12 +5594,19 @@
                     "name": "Hulgikauplus",
                     "terms": "hulgikaup"
                 },
+                "shop/wigs": {
+                    "name": "Parukapood"
+                },
                 "shop/window_blind": {
                     "name": "Aknakatete kauplus",
                     "terms": "rulood,ribikardinad,lamellkardinad"
                 },
                 "shop/wine": {
                     "name": "Veinipood"
+                },
+                "shop/yes": {
+                    "name": "Määratlemata pood",
+                    "aliases": "Määratlemata kauplus"
                 },
                 "telecom/data_center": {
                     "name": "Andmekeskus",
@@ -3761,7 +5649,8 @@
                     "name": "Kunstigalerii"
                 },
                 "tourism/guest_house": {
-                    "name": "Külalistemaja"
+                    "name": "Külalistemaja",
+                    "terms": "võõrastemaja"
                 },
                 "tourism/hostel": {
                     "name": "Hostel"
@@ -3947,6 +5836,9 @@
                 "waterway/canal": {
                     "name": "Kanal"
                 },
+                "waterway/canal/lock": {
+                    "name": "Lüüs"
+                },
                 "waterway/dam": {
                     "name": "Pais"
                 },
@@ -3961,9 +5853,15 @@
                     "name": "Äravool",
                     "terms": "reovee äravool"
                 },
+                "waterway/fish_pass": {
+                    "name": "Kalatrepp"
+                },
                 "waterway/fuel": {
                     "name": "Laevakütuse tankla",
                     "terms": "kütus,bensiin,diisel,gaas,paat,paadi,mere"
+                },
+                "waterway/lock_gate": {
+                    "name": "Lüüsivärav"
                 },
                 "waterway/river": {
                     "name": "Jõgi"

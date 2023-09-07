@@ -3,7 +3,6 @@
     "fields": [
         "operator",
         "collection_times",
-        "drive_through",
         "ref"
     ],
     "moreFields": [
@@ -12,12 +11,13 @@
         "brand",
         "colour",
         "covered",
-        "gnis/feature_id-US",
+        "drive_through",
         "height",
         "indoor",
         "level",
         "manufacturer",
         "material",
+        "post_box/type",
         "support",
         "wheelchair"
     ],
@@ -44,5 +44,11 @@
         "postal box",
         "postbox"
     ],
+    "locationSet": {
+        "exclude": [
+            "gb",
+            "us"
+        ]
+    },
     "name": "Mail Drop Box"
 }

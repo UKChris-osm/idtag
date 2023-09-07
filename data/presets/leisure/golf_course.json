@@ -7,12 +7,7 @@
         "opening_hours"
     ],
     "moreFields": [
-        "email",
-        "fax",
-        "gnis/feature_id-US",
-        "opening_hours/covid19",
-        "payment_multi",
-        "phone"
+        "{@templates/poi}"
     ],
     "geometry": [
         "area",

@@ -7,13 +7,10 @@
         "address"
     ],
     "moreFields": [
-        "email",
-        "fax",
+        "{@templates/contact}",
         "gnis/feature_id-US",
         "opening_hours",
-        "opening_hours/covid19",
-        "payment_multi",
-        "phone"
+        "payment_multi"
     ],
     "geometry": [
         "point",
@@ -28,8 +25,8 @@
         "horse riding center",
         "horse riding facility",
         "horse riding",
-        "horse stables",
         "riding facility",
+        "riding stables",
         "stables"
     ],
     "tags": {

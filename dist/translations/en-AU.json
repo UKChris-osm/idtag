@@ -162,7 +162,8 @@
                     "aliases": "Petrol Station"
                 },
                 "amenity/parking": {
-                    "name": "Car Park"
+                    "name": "Car Park",
+                    "aliases": "Parking Lot"
                 },
                 "amenity/parking/multi-storey": {
                     "name": "Multistorey Car Park"
@@ -172,7 +173,7 @@
                     "aliases": "Commuter Car Park"
                 },
                 "amenity/parking_entrance": {
-                    "name": "Carpark Building Entrance / Exit"
+                    "name": "Car Park Building Entrance / Exit"
                 },
                 "amenity/payment_centre": {
                     "name": "Payment Centre"
@@ -205,10 +206,6 @@
                 "amenity/vending_machine/fuel": {
                     "name": "Fuel Pump"
                 },
-                "amenity/waste_basket": {
-                    "name": "Rubbish Bin",
-                    "terms": "waste,bin,garbage,rubbish,litter,trash"
-                },
                 "amenity/weighbridge": {
                     "name": "Weighbridge",
                     "aliases": "Truck Scale"
@@ -227,10 +224,6 @@
                 },
                 "barrier/kerb/rolled": {
                     "name": "Rolled Kerb"
-                },
-                "building/terrace": {
-                    "name": "Terraced Houses",
-                    "terms": "home,terrace,terraced,brownstone,residence,dwelling,townhouse,townhouses,row house,row houses"
                 },
                 "healthcare/birthing_center": {
                     "name": "Birthing Centre"
@@ -275,6 +268,11 @@
                 "highway/street_lamp": {
                     "name": "Street Light",
                     "terms": "streetlamp,street lamp,lamp,light,gaslight"
+                },
+                "highway/track": {
+                    "name": "Track / Land-Access Road",
+                    "terms": "fire trail",
+                    "aliases": "Fire Trail"
                 },
                 "highway/traffic_signals": {
                     "name": "Traffic Lights"

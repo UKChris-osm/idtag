@@ -9,16 +9,18 @@
         "note"
     ],
     "moreFields": [
-        "address",
-        "email",
-        "fax",
-        "phone"
+        "{@templates/contact}",
+        "address"
     ],
     "geometry": [
         "area"
     ],
     "tags": {
         "landuse": "construction"
+    },
+    "removeTags": {
+        "landuse": "construction",
+        "construction": "*"
     },
     "terms": [
         "building",

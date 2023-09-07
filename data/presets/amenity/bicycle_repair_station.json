@@ -15,8 +15,7 @@
         "covered",
         "indoor",
         "level",
-        "manufacturer",
-        "opening_hours/covid19"
+        "manufacturer"
     ],
     "geometry": [
         "point",

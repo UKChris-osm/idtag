@@ -239,6 +239,14 @@
     },
     {
         "old": {
+            "amenity": "lifeboat_station"
+        },
+        "replace": {
+            "emergency": "water_rescue"
+        }
+    },
+    {
+        "old": {
             "amenity": "notice_board"
         },
         "replace": {
@@ -578,14 +586,6 @@
     },
     {
         "old": {
-            "building": "constraction"
-        },
-        "replace": {
-            "building": "construction"
-        }
-    },
-    {
-        "old": {
             "building": "convenience"
         },
         "replace": {
@@ -746,14 +746,6 @@
     },
     {
         "old": {
-            "building": "under constraction"
-        },
-        "replace": {
-            "building": "construction"
-        }
-    },
-    {
-        "old": {
             "building": "under construction"
         },
         "replace": {
@@ -842,16 +834,6 @@
     },
     {
         "old": {
-            "shop": "clothes",
-            "clothes": "second_hand"
-        },
-        "replace": {
-            "shop": "clothes",
-            "second_hand": "yes"
-        }
-    },
-    {
-        "old": {
             "color": "*"
         },
         "replace": {
@@ -925,6 +907,31 @@
         },
         "replace": {
             "crossing": "traffic_signals"
+        }
+    },
+    {
+        "old": {
+            "crossing": "no",
+            "highway": "crossing"
+        },
+        "replace": {
+            "crossing": "no"
+        }
+    },
+    {
+        "old": {
+            "cuisine": "barbeque"
+        },
+        "replace": {
+            "cuisine": "barbecue"
+        }
+    },
+    {
+        "old": {
+            "cuisine": "bbq"
+        },
+        "replace": {
+            "cuisine": "barbecue"
         }
     },
     {
@@ -1172,6 +1179,48 @@
         },
         "replace": {
             "embassy": "yes"
+        }
+    },
+    {
+        "old": {
+            "emergency": "dry_riser_inlet"
+        },
+        "replace": {
+            "emergency": "fire_service_inlet",
+            "fire_mains": "dry"
+        }
+    },
+    {
+        "old": {
+            "emergency": "sprinkler_connection"
+        },
+        "replace": {
+            "emergency": "fire_service_inlet",
+            " fire_sprinkler": "yes"
+        }
+    },
+    {
+        "old": {
+            "emergency": "lifeboat_station"
+        },
+        "replace": {
+            "emergency": "water_rescue"
+        }
+    },
+    {
+        "old": {
+            "emergency": "marine_rescue"
+        },
+        "replace": {
+            "emergency": "water_rescue"
+        }
+    },
+    {
+        "old": {
+            "emergency_service": "air"
+        },
+        "replace": {
+            "emergency": "air_rescue_service"
         }
     },
     {
@@ -1559,6 +1608,14 @@
         "replace": {
             "historic": "archaeological_site",
             "archaeological_site": "$1"
+        }
+    },
+    {
+        "old": {
+            "industrial": "gas"
+        },
+        "replace": {
+            "utility": "gas"
         }
     },
     {
@@ -2467,6 +2524,22 @@
     },
     {
         "old": {
+            "parking:orientation": "*"
+        },
+        "replace": {
+            "orientation": "$1"
+        }
+    },
+    {
+        "old": {
+            "orientation": "orthogonal"
+        },
+        "replace": {
+            "orientation": "perpendicular"
+        }
+    },
+    {
+        "old": {
             "parking:orientation": "orthogonal"
         },
         "replace": {
@@ -2865,6 +2938,16 @@
     },
     {
         "old": {
+            "shop": "clothes",
+            "clothes": "second_hand"
+        },
+        "replace": {
+            "shop": "clothes",
+            "second_hand": "yes"
+        }
+    },
+    {
+        "old": {
             "shop": "consulting"
         },
         "replace": {
@@ -2997,7 +3080,7 @@
             "shop": "organic"
         },
         "replace": {
-            "shop": "supermarket",
+            "shop": "yes",
             "organic": "only"
         }
     },
@@ -3225,6 +3308,70 @@
         "replace": {
             "intermittent": "yes",
             "waterway": "stream"
+        }
+    },
+    {
+        "old": {
+            "street_cabinet": "broadband"
+        },
+        "replace": {
+            "utility": "telecom"
+        }
+    },
+    {
+        "old": {
+            "street_cabinet": "cable_tv"
+        },
+        "replace": {
+            "utility": "television"
+        }
+    },
+    {
+        "old": {
+            "street_cabinet": "communications"
+        },
+        "replace": {
+            "utility": "telecom"
+        }
+    },
+    {
+        "old": {
+            "street_cabinet": "gas"
+        },
+        "replace": {
+            "utility": "gas"
+        }
+    },
+    {
+        "old": {
+            "street_cabinet": "power"
+        },
+        "replace": {
+            "utility": "power"
+        }
+    },
+    {
+        "old": {
+            "street_cabinet": "street_lighting"
+        },
+        "replace": {
+            "utility": "street_lighting"
+        }
+    },
+    {
+        "old": {
+            "street_cabinet": "telecom"
+        },
+        "replace": {
+            "utility": "telecom"
+        }
+    },
+    {
+        "old": {
+            "survey_date": "*"
+        },
+        "replace": {
+            "survey:date": "$1"
         }
     },
     {
@@ -3827,6 +3974,74 @@
         "replace": {
             "leaf_cycle": "mixed",
             "leaf_type": "mixed"
+        }
+    },
+    {
+        "old": {
+            "cycleway": "none"
+        },
+        "replace": {
+            "cycleway": "no"
+        }
+    },
+    {
+        "old": {
+            "cycleway:left": "none"
+        },
+        "replace": {
+            "cycleway:left": "no"
+        }
+    },
+    {
+        "old": {
+            "cycleway:right": "none"
+        },
+        "replace": {
+            "cycleway:right": "no"
+        }
+    },
+    {
+        "old": {
+            "cycleway:both": "none"
+        },
+        "replace": {
+            "cycleway:both": "no"
+        }
+    },
+    {
+        "old": {
+            "communication": "pole"
+        },
+        "replace": {
+            "man_made": "utility_pole",
+            "utility": "telecom"
+        }
+    },
+    {
+        "old": {
+            "telephone": "pole"
+        },
+        "replace": {
+            "man_made": "utility_pole",
+            "utility": "telecom"
+        }
+    },
+    {
+        "old": {
+            "telecom": "pole"
+        },
+        "replace": {
+            "man_made": "utility_pole",
+            "utility": "telecom"
+        }
+    },
+    {
+        "old": {
+            "pstn": "pole"
+        },
+        "replace": {
+            "man_made": "utility_pole",
+            "utility": "telecom"
         }
     }
 ]

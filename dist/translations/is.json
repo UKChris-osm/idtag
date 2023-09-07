@@ -111,19 +111,16 @@
                         "housenumber": "123",
                         "housenumber!jp": "Bygging Nr./Lóð Nr.",
                         "neighbourhood": "Grannsvæði",
-                        "neighbourhood!jp": "Chōme/Aza/Koaza",
                         "place": "Staður",
                         "postcode": "Póstnúmer",
                         "province": "Hérað",
                         "province!jp": "Lögregluumdæmi",
                         "quarter": "Hverfi",
-                        "quarter!jp": "Ōaza/Machi",
                         "state": "Ríki",
                         "street": "Gata",
                         "subdistrict": "Undirsvæði",
                         "subdistrict!vn": "Hverfishluti/Hreppur/Byggðakjarni",
                         "suburb": "Úthverfi",
-                        "suburb!jp": "Hverfishluti",
                         "unit": "Eining"
                     }
                 },
@@ -797,9 +794,6 @@
                 "material": {
                     "label": "Efni"
                 },
-                "maxheight": {
-                    "label": "Hámarkshæð"
-                },
                 "maxspeed": {
                     "label": "Hraðatakmörkun",
                     "placeholder": "40, 50, 60..."
@@ -807,12 +801,6 @@
                 "maxspeed/advisory": {
                     "label": "Ráðlögð hraðatakmörkun",
                     "placeholder": "40, 50, 60..."
-                },
-                "maxstay": {
-                    "label": "Hámarksdvöl"
-                },
-                "maxweight": {
-                    "label": "Hámarksþyngd"
                 },
                 "memorial": {
                     "label": "Tegund"
@@ -1373,15 +1361,6 @@
                     "label": "Heimildir"
                 },
                 "sport": {
-                    "label": "Íþróttir"
-                },
-                "sport_ice": {
-                    "label": "Íþróttir"
-                },
-                "sport_racing_motor": {
-                    "label": "Íþróttir"
-                },
-                "sport_racing_nonmotor": {
                     "label": "Íþróttir"
                 },
                 "stars": {
@@ -1991,9 +1970,6 @@
                 "amenity/recycling_centre": {
                     "name": "Endurvinnslumiðstöð"
                 },
-                "amenity/recycling_container": {
-                    "name": "Endurvinnslugámur"
-                },
                 "amenity/restaurant": {
                     "name": "Veitingahús"
                 },
@@ -2158,9 +2134,6 @@
                 },
                 "amenity/waste/dog_excrement": {
                     "name": "Fata undir hundaskít"
-                },
-                "amenity/waste_basket": {
-                    "name": "Ruslafata"
                 },
                 "amenity/waste_disposal": {
                     "name": "Ruslagámur"
@@ -2388,9 +2361,6 @@
                 },
                 "building/temple": {
                     "name": "Musterisbygging"
-                },
-                "building/terrace": {
-                    "name": "Raðhús"
                 },
                 "building/transportation": {
                     "name": "Samgöngubygging"
@@ -2908,9 +2878,6 @@
                 },
                 "landuse/military/barracks": {
                     "name": "Herbúðir"
-                },
-                "landuse/military/danger_area": {
-                    "name": "Hættusvæði"
                 },
                 "landuse/military/range": {
                     "name": "Hersvæði"
@@ -3955,9 +3922,6 @@
                 },
                 "shop/pet": {
                     "name": "Dýrabúð"
-                },
-                "shop/pet_grooming": {
-                    "name": "Dýrasnyrtiverslun"
                 },
                 "shop/photo": {
                     "name": "Ljósmyndavöruverslun"

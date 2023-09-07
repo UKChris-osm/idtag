@@ -5,10 +5,10 @@
         "parking:right:orientation"
     ],
     "reference": {
-        "key": "parking:orientation"
+        "key": "orientation"
     },
     "type": "directionalCombo",
-    "label": "Parking orientation",
+    "label": "Parking Orientation",
     "strings": {
         "types": {
             "parking:left:orientation": "Left side",

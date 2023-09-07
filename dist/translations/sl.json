@@ -94,19 +94,16 @@
                         "housenumber": "123",
                         "housenumber!jp": "Številka zgradbe",
                         "neighbourhood": "Soseska",
-                        "neighbourhood!jp": "Japonski Čome/Aza/Koaza",
                         "place": "Kraj",
                         "postcode": "Poštna številka",
                         "province": "Pokrajina",
                         "province!jp": "Prefektura",
                         "quarter": "Mestna četrt",
-                        "quarter!jp": "Japonski Oaza/Mači",
                         "state": "Zvezna država",
                         "street": "Ulica",
                         "subdistrict": "Okraj",
                         "subdistrict!vn": "Okraj/Komuna/Mestece",
                         "suburb": "Predmestje",
-                        "suburb!jp": "Okraj",
                         "unit": "Enota"
                     }
                 },
@@ -713,21 +710,12 @@
                 "marker": {
                     "label": "Vrsta"
                 },
-                "maxheight": {
-                    "label": "Največja višina"
-                },
                 "maxspeed": {
                     "label": "Omejitev hitrosti",
                     "placeholder": "40, 50, 60 ..."
                 },
                 "maxspeed/advisory": {
                     "placeholder": "40, 50, 60 ..."
-                },
-                "maxstay": {
-                    "label": "Najdaljši postanek"
-                },
-                "maxweight": {
-                    "label": "Največja dovoljena masa"
                 },
                 "memorial": {
                     "label": "Vrsta"
@@ -1082,15 +1070,6 @@
                     "label": "Viri"
                 },
                 "sport": {
-                    "label": "Vrste športa"
-                },
-                "sport_ice": {
-                    "label": "Vrste športa"
-                },
-                "sport_racing_motor": {
-                    "label": "Vrste športa"
-                },
-                "sport_racing_nonmotor": {
                     "label": "Vrste športa"
                 },
                 "stars": {
@@ -1698,9 +1677,6 @@
                 "amenity/recycling_centre": {
                     "name": "Center za recikliranje"
                 },
-                "amenity/recycling_container": {
-                    "name": "Ekološki otok"
-                },
                 "amenity/restaurant": {
                     "name": "Restavracija",
                     "terms": "gostilna,gostinski obrat"
@@ -1811,10 +1787,6 @@
                 },
                 "amenity/waste/dog_excrement": {
                     "name": "Koš za pasje iztrebke"
-                },
-                "amenity/waste_basket": {
-                    "name": "Koš za odpadke",
-                    "terms": "koš za smeti,smetnjak"
                 },
                 "amenity/waste_disposal": {
                     "name": "Zabojnik za odpadke"
@@ -2010,10 +1982,6 @@
                 "building/stable": {
                     "name": "Hlev",
                     "terms": "štala"
-                },
-                "building/terrace": {
-                    "name": "Vrstne hiše",
-                    "terms": "vrstna hiša"
                 },
                 "building/university": {
                     "name": "Univerzitetna stavba",
@@ -2546,10 +2514,6 @@
                 "landuse/military/barracks": {
                     "name": "Vojašnica",
                     "terms": "vojašnica,vojska,varovanje,tanki,poveljniki,general"
-                },
-                "landuse/military/danger_area": {
-                    "name": "Nevarno območje",
-                    "terms": "strelišče,delovišče,gradbišče"
                 },
                 "landuse/military/range": {
                     "name": "Vojaško strelišče"

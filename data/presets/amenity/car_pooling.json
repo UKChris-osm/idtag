@@ -10,10 +10,7 @@
         "lit"
     ],
     "moreFields": [
-        "email",
-        "fax",
-        "opening_hours/covid19",
-        "phone",
+        "{@templates/contact}",
         "wheelchair"
     ],
     "geometry": [

@@ -10,8 +10,7 @@
         "website"
     ],
     "moreFields": [
-        "email",
-        "fax",
+        "{@templates/contact}",
         "gnis/feature_id-US",
         "wheelchair"
     ],
@@ -27,10 +26,10 @@
         "boat rescue"
     ],
     "tags": {
-        "emergency": "lifeboat_station"
+        "emergency": "water_rescue"
     },
     "addTags": {
-        "emergency": "lifeboat_station",
+        "emergency": "water_rescue",
         "seamark:type": "rescue_station"
     },
     "name": "Lifeboat Station"

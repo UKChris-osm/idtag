@@ -13,14 +13,312 @@ _Breaking developer changes, which may affect downstream projects or sites that 
 #### New Presets
 #### Changed Presets
 #### New and Changed Fields
+#### Regional Presets and Fields
+#### Deprecated Tags
+#### Bugfixes
+#### Documentation and Other Changes
 
 [#xxxx]: https://github.com/openstreetmap/id-tagging-schema/issues/xxxx
 [#xxxx]: https://github.com/openstreetmap/id-tagging-schema/pull/xxxx
 [@xxxx]: https://github.com/xxxx
 -->
 
-# 6.0.0-rc.1
-##### 2023-Jan-30
+# 6.4.1
+##### 2023-Aug-16
+
+* Update distribution files and translations from Transifex.
+
+
+# 6.4.0
+##### 2023-Aug-16
+
+#### New Presets
+* Add EV Charging Point preset for `man_made=charge_point` ([#896], thanks [@arch0345])
+* Add preset for Milk Churn Stands ([#869], thanks [@arch0345])
+* Add preset for Rice Shops ([#944], thanks [@govvin])
+* Add preset for `boundary=hazard` (Hazardous Area) ([#952], thanks [@arch0345])
+* Add preset for Tree Stumps (`natural=tree_stump`) ([#957], thanks [@tordans])
+* Add preset for Hooka Lounge / Shisha Bar (`amenity=hookah_lounge`) ([#961], thanks [@kjonosm])
+* Add preset for Pasta Stores ([#930], thanks [@govvin])
+* Add presets for taxi stands which do not use "regular" cars, like Auto/Cycle Riskshaw Stands and Motorcycle Taxi Stands ([#946], thanks [@govvin])
+* Add specific presets for Trees which have the tags `leaf_cycle`/`leaf_type` mapped ([#956])
+#### Changed Presets
+* Add field to specify the type of a `house` ([#921], thanks [@arch0345])
+* Allow Drinking Water to be mapped on verticed ([#925], thanks [@arch0345])
+* Rename preset for Trash Cans and Recycling Bins ([#938], thanks [@arch0345])
+* Add `direction` field to Emergency Bay preset
+* Add more fields to Parcel Locker preset for the tags: `wheelchair`, `indoor` ([#940]), `collection_times`, `surveillance`
+* Rename preset for `military=danger_area` to Military Danger Area ([#952], thanks [@arch0345])
+* Use generic traffic sign icon for `traffic_sign=maxspeed` ([#968], thanks [@tordans])
+#### New and Changed Fields
+* Add fields for `maxlength` and `maxaxleload` ([#911], thanks [@arch0345]), rename fields for `maxheight`, `maxwidth` and `maxstay` to be consistent with each other
+* Add options (translatable strings) to fields for the following tags: `vending`, `tomb`, `telecom`, `social_facility:for`, `healthcare`, `military_service`, `marker` ([#923], [#924], [#933], [#934], [#935], [#972], [#973], thanks [@kjonosm])
+* Add more values to the `sport` field ([#969], thanks [@kjonosm])
+* Add `fine_gravel` as a value to the `surface` field ([#967], thanks [@kjonosm])
+* Change field for the `ramp` tag from checkbox to `combo`, add option `separate` ([#939], thanks [@arch0345])
+* Add field to specify the type of vehicle at taxi stands ([#946], thanks [@govvin])
+#### Regional Presets and Fields
+* Philippines: Create preset for Barangay Halls ([#932], thanks [@govvin])
+* US, Canada, Liberia: Use _square_ icon for `traffic:sign=maxspeed`
+#### Other Changes
+* Don't always also show the Wikipedia field when the `wikidata` tag is set on an object
+* Drop field for `opening_hours:covid19` ([#963])
+#### Bugfixes
+* Fix tag used for Barbeque Restaurants from the (incorrect) value `cuisine=barbeque` to `cuisine=barbecue` ([#943])
+* Fix documentation _reference_ of `parking:*:orientation` field
+#### Documentation and Other Changes
+* Update `prettier` to v3
+
+[#869]: https://github.com/openstreetmap/id-tagging-schema/issues/869
+[#896]: https://github.com/openstreetmap/id-tagging-schema/issues/896
+[#911]: https://github.com/openstreetmap/id-tagging-schema/pull/911
+[#921]: https://github.com/openstreetmap/id-tagging-schema/pull/921
+[#923]: https://github.com/openstreetmap/id-tagging-schema/pull/923
+[#924]: https://github.com/openstreetmap/id-tagging-schema/pull/924
+[#925]: https://github.com/openstreetmap/id-tagging-schema/pull/925
+[#930]: https://github.com/openstreetmap/id-tagging-schema/issues/930
+[#932]: https://github.com/openstreetmap/id-tagging-schema/pull/932
+[#933]: https://github.com/openstreetmap/id-tagging-schema/pull/933
+[#934]: https://github.com/openstreetmap/id-tagging-schema/pull/934
+[#935]: https://github.com/openstreetmap/id-tagging-schema/pull/935
+[#938]: https://github.com/openstreetmap/id-tagging-schema/pull/938
+[#939]: https://github.com/openstreetmap/id-tagging-schema/pull/939
+[#940]: https://github.com/openstreetmap/id-tagging-schema/issues/940
+[#942]: https://github.com/openstreetmap/id-tagging-schema/issues/942
+[#943]: https://github.com/openstreetmap/id-tagging-schema/issues/943
+[#944]: https://github.com/openstreetmap/id-tagging-schema/pull/944
+[#946]: https://github.com/openstreetmap/id-tagging-schema/pull/946
+[#952]: https://github.com/openstreetmap/id-tagging-schema/pull/952
+[#956]: https://github.com/openstreetmap/id-tagging-schema/pull/956
+[#957]: https://github.com/openstreetmap/id-tagging-schema/pull/957
+[#961]: https://github.com/openstreetmap/id-tagging-schema/pull/961
+[#963]: https://github.com/openstreetmap/id-tagging-schema/issues/963
+[#967]: https://github.com/openstreetmap/id-tagging-schema/pull/967
+[#968]: https://github.com/openstreetmap/id-tagging-schema/pull/968
+[#969]: https://github.com/openstreetmap/id-tagging-schema/pull/969
+[#972]: https://github.com/openstreetmap/id-tagging-schema/pull/972
+[#973]: https://github.com/openstreetmap/id-tagging-schema/pull/973
+[@govvin]: https://github.com/govvin
+
+
+# 6.3.0
+##### 2023-Jun-02
+#### :mega: Release Highlights
+* Support alternative tagging of Phone, Fax, Email and Website fields using the `contact:*` tagging schema ([#905])
+#### New Presets
+* Add "Yacht Berths" preset ([#899])
+#### Changed Presets
+* Add "Ramen Shop" as alias to Ramen Restaurant, and refine its search terms
+* Use more specific car icons for presets: Driving School, (Used) Car Dealer ([#902], thanks [@tiptoptom])
+* Add additional fields to `man_made=watermill` and `man_made=windmill` presets and show `start_date` field by default
+* Switch to Ford icon from Röntgen icon set
+#### New and Changed Fields
+* Add field for `bicycle_road` tag (see [#888])
+* Add field for `building:colour` tag ([#904])
+* Add field to switch between Yacht Berths and Marina by checkbox (`seamark:harbour:category` tag) ([#899])
+* Add field for Mobile Phone number (`mobile`/`contact:mobile`)
+* Add Bridge Number field ([#912], thanks [@arch0345])
+#### Regional Presets and Fields
+* BE, NL: Add field for `cyclestreet` tag ([#888], thanks [@pietervdvn])
+* BG: Only show relevant values for crossing markings ([#891], thanks [@Dimitrar5555])
+* DE,AT,CH: Only show relevant values for crossing markings
+* JP: Update placeholders for Japanese address schema ([#907])
+#### Bugfixes
+* Offer `crossing:markings` field in all relevant `crossing/*/traffic_signals` presets ([#908])
+* Make unspecified Pedestrian Crossing (line preset) searchable ([#889], thanks [@Dimitrar5555])
+* Drop `construction` subtag when preset is changed away from a Construction preset ([#903])
+* Allow `barrier=log` preset on "standalone" points ([#898])
+* Drop `segregated` tag when changing away from Cycle+Foot Path preset ([#910])
+#### Documentation and Other Changes
+* Create template for regional crossing:markings fields
+* Upgrade to schema-builder [v6.3](https://github.com/ideditor/schema-builder/blob/main/CHANGELOG.md#630): Allows to specify alternative keys for text, number, tel, email and url fields.
+
+[#888]: https://github.com/openstreetmap/id-tagging-schema/pull/888
+[#889]: https://github.com/openstreetmap/id-tagging-schema/pull/889
+[#898]: https://github.com/openstreetmap/id-tagging-schema/issues/898
+[#899]: https://github.com/openstreetmap/id-tagging-schema/pull/899
+[#891]: https://github.com/openstreetmap/id-tagging-schema/pull/891
+[#902]: https://github.com/openstreetmap/id-tagging-schema/pull/902
+[#903]: https://github.com/openstreetmap/id-tagging-schema/issues/903
+[#904]: https://github.com/openstreetmap/id-tagging-schema/issues/904
+[#905]: https://github.com/openstreetmap/id-tagging-schema/issues/905
+[#907]: https://github.com/openstreetmap/id-tagging-schema/issues/907
+[#908]: https://github.com/openstreetmap/id-tagging-schema/issues/908
+[#910]: https://github.com/openstreetmap/id-tagging-schema/issues/910
+[#912]: https://github.com/openstreetmap/id-tagging-schema/pull/912
+[@pietervdvn]: https://github.com/pietervdvn
+[@Dimitrar5555]: https://github.com/Dimitrar5555
+
+
+# 6.2.0
+##### 2023-May-05
+
+#### New Presets
+* Add presets for Georgian and Ukrainian restaurants ([#857], thanks [@matkoniecz])
+* Add preset for `shop=honey` ([#1], [#878], thanks [@matkoniecz])
+* Add Ramen Restaurant preset ([#880], thanks [@arch0345])
+* Add Frozen Yogurt Shop preset ([#881], thanks [@arch0345])
+* Add Chicken Wings Fast Food preset ([#883], thanks [@arch0345])
+* Add Bagel Fast Food preset ([#882], thanks [@arch0345])
+#### Changed Presets
+* Enable tagging unspecific crossings ([#837], [#834], thanks [@matkoniecz])
+* Add contact:facebook field to POI presets ([#859], thanks [@Cj-Malone])
+* Add _white goods_ as search term to `shop=appliance` preset ([#864], thanks [@matkoniecz])
+* Add _Pedestrian Island_ as an alias of the `footway=traffic_island` preset ([#865], thanks [@Dimitar5555])
+* Rename `amenity=kneipp_water_cure` preset to _Kneipp Facility_ ([#866])
+* Improve search terms of `horse_riding` preset ([#868], thanks [@Hufkratzer])
+* Improve search terms of advertisement devices ([#867], thanks [@matkoniecz])
+* Improve search terms of Pulmonologist ([#872], thanks [@matkoniecz])
+* Add "Obstetrician" as synonym to Gynecologist and improve the preset's search terms ([#873], [#789], thanks [@matkoniecz])
+* Add "bus terminal" as search term to Bus Station preset ([#890], thanks [@Dimitar5555])
+* Improve terms and add "Clinical Psychologist" as an alias to Psychotherapist preset ([#877])
+#### New and Changed Fields
+* Rename sport=equestrian to "Equestrian Sports" ([#855], thanks [@Hufkratzer])
+* Add additional cuisine values ([#857], thanks [@matkoniecz])
+* Add strings for values of `kneipp_water_cure:*` subtags ([#866])
+* Change Gender field to a `manyCombo` field ([#895])
+* Restrict values of the Gender field for hairdressers to female/male ([#894])
+* Use translated strings of the `sport` field also in its subfields (e.g. `sport_ice`, `sport_racing*`)
+#### Deprecated Tags
+* Replace ~~`survey_date`~~ with `survey:date` ([#860], thanks [@Marc-marc-marc])
+* Suggest to remove `highway=crossing` when `crossing=no` ([#863])
+#### Bugfixes
+* Don't assume a `kerb` tag implies being a barrier, as it can also be used as an attribute of a `highway=crossing` vertex ([#858], [#862])
+* Allow `highway=elevator` on areas and standalone nodes ([#870])
+* Fix match priorities for Crossing and Speed Table presets ([#863])
+* Upgrade (deprecated) `shop=organic` to `shop=yes + organic=only` (instead of `shop=supermarket + organic=only`) ([#884], thanks [@matkoniecz])
+#### Documentation and Other Changes
+* Clean up presets with fields included as both `fields` and `moreFields`
+* Consolidate optional fields of "POI" presets into "template presets"
+
+[#1]: https://github.com/openstreetmap/id-tagging-schema/issues/1
+[#789]: https://github.com/openstreetmap/id-tagging-schema/issues/789
+[#834]: https://github.com/openstreetmap/id-tagging-schema/issues/834
+[#858]: https://github.com/openstreetmap/id-tagging-schema/issues/858
+[#863]: https://github.com/openstreetmap/id-tagging-schema/issues/863
+[#866]: https://github.com/openstreetmap/id-tagging-schema/issues/866
+[#870]: https://github.com/openstreetmap/id-tagging-schema/issues/870
+[#877]: https://github.com/openstreetmap/id-tagging-schema/issues/877
+[#894]: https://github.com/openstreetmap/id-tagging-schema/issues/894
+[#895]: https://github.com/openstreetmap/id-tagging-schema/issues/895
+[#837]: https://github.com/openstreetmap/id-tagging-schema/pull/837
+[#855]: https://github.com/openstreetmap/id-tagging-schema/pull/855
+[#857]: https://github.com/openstreetmap/id-tagging-schema/pull/857
+[#859]: https://github.com/openstreetmap/id-tagging-schema/pull/859
+[#860]: https://github.com/openstreetmap/id-tagging-schema/pull/860
+[#862]: https://github.com/openstreetmap/id-tagging-schema/pull/862
+[#864]: https://github.com/openstreetmap/id-tagging-schema/pull/864
+[#865]: https://github.com/openstreetmap/id-tagging-schema/pull/865
+[#867]: https://github.com/openstreetmap/id-tagging-schema/pull/867
+[#868]: https://github.com/openstreetmap/id-tagging-schema/pull/868
+[#872]: https://github.com/openstreetmap/id-tagging-schema/pull/872
+[#873]: https://github.com/openstreetmap/id-tagging-schema/pull/873
+[#878]: https://github.com/openstreetmap/id-tagging-schema/pull/878
+[#880]: https://github.com/openstreetmap/id-tagging-schema/pull/880
+[#881]: https://github.com/openstreetmap/id-tagging-schema/pull/881
+[#882]: https://github.com/openstreetmap/id-tagging-schema/pull/882
+[#883]: https://github.com/openstreetmap/id-tagging-schema/pull/883
+[#884]: https://github.com/openstreetmap/id-tagging-schema/pull/884
+[#890]: https://github.com/openstreetmap/id-tagging-schema/pull/890
+[@Cj-Malone]: https://github.com/Cj-Malone
+
+
+# 6.1.0
+##### 2023-Apr-03
+
+#### :mega: Release Highlights
+* On github, automated preview instances of iD will be deployed for tagging PRs
+#### New Presets
+* Add presets for Korean and Spanish Restaurants ([#815], thanks [@andrewharvey])
+* Add preset for `man_made=quay` ([#810], thanks [@jdhoek])
+* Add Track & Field presets ([#817], thanks [@arch0345])
+* Add preset for `natural=peninsula` ([#798], [#844], thanks [@harahu])
+* Add preset for `emergency=fire_service_inlet` ([#806], thanks [@tiptoptom])
+* Add preset for Scout Group ([#836], thanks [@tiptoptom])
+#### Changed Presets
+* Add a field for the tag `website:menu` to amenties like Restaurants, Cafes, etc.  ([#803], thanks [@tognee])
+* Rename `military=danger_area` preset to "Danger Zone, Access Prohibited" ([#792], thanks [@emersonveenstra])
+* Add terms "cat/dog grooming" to Pet Groomer preset ([#811], thanks [@matkoniecz])
+* Use `amenity=dancing_school` tag for Dance Studio preset
+* Add `flashing_lights` field to `crossing=uncontrolled` ([#827], thanks [@Dimitar5555])
+* Make `shop=vacant` preset searchable ([#828], thanks [@Dimitar5555])
+* Hide `shop=hobby` preset and add _hobby_ as search term to related Shop presets ([#24], [#821], [#823], thanks [@matkoniecz])
+* Make `barrier=log` preset searchable ([#615], [#822], thanks [@matkoniecz])
+* More dedicated icon for Sign Maker, `shop=frozen_food` and Castle presets ([#839], [#840], [#849], thanks [@matkoniecz])
+* Add additional search terms to Billboard preset ([#848], thanks [@matkoniecz])
+#### New and Changed Fields
+* Drop value `community` from `postbox:type` field ([#805], thanks [@kjonosm])
+* Add translatable strings for fields: `historic`, `diplomatic`, `consulate`, `dock`, `collector` ([#813], [#841], [#843], [#852], [#853], thanks [@kjonosm])
+* Add field for `dance:teaching=yes/no` tag
+* Add more values of `sport` field ([#812], thanks [@kjonosm])
+* Add fields for `fire_mains` and `fire_sprinkler` ([#806], thanks [@tiptoptom])
+* Update tag of Orientation field for Street Side Parking preset from `parking:orientation` to `orientation` ([#673], thanks [@tordans])
+* Specify cons for some `shelter_type` values ([#851])
+#### Deprecated Tags
+* Add recently deprecated tags ([#807], thanks [@kjonosm]):
+    * ~~`amenity=lifeboat-station`~~ :arrow_right: `emergency=water_rescue`
+    * ~~`emergency=lifeboat_station`~~ :arrow_right: `emergency=water_rescue`
+    * ~~`emergency=marine_rescue`~~ :arrow_right: `emergency=water_rescue`
+    * ~~`emergency_service=air`~~ :arrow_right: `emergency=air_rescue_service`
+    * ~~`emergency=dry_riser_inlet`~~ :arrow_right: `emergency=fire_service_inlet`+ `fire_mains=dry`
+    * ~~`emergency=sprinkler_connection`~~ :arrow_right: `emergency=fire_service_inlet`+ `fire_sprinkler=yes`
+* Remove disputed deprecation of `amenity=dancing_school` ([#814], thanks [@matkoniecz])
+* Update Utility Pole preset and add relevant deprecations ([#830], [#211], thanks [@Dimitar5555]):
+    * ~`communication=pole`~ :arrow_right: `man_made=utility_pole` + `utility=telecom`
+    * ~`telephone=pole`~ :arrow_right: `man_made=utility_pole` + `utility=telecom`
+    * ~`telecom=pole`~ :arrow_right: `man_made=utility_pole` + `utility=telecom`
+    * ~`pstn=pole`~ :arrow_right: `man_made=utility_pole` + `utility=telecom`
+* ~`parking:orientation=*`~ :arrow_right: `orientation=*` ([#673], thanks [@tordans])
+#### Bugfixes
+* Fix tag of (hidden) generic Pipeline Feature preset
+* Avoid lowercasing Destination field on one-ways ([#829], thanks [@1ec5])
+#### Documentation and Other Changes
+* Extend documentation section about translating ([#825], thanks [@tordans])
+* Create [CONTRIBUTING](./CONTRIBUTING.md) page
+* Add a `.nvmrc` file
+* Bump dependencies: `prettier` to v2.8.6, `schema-builder` to v6.2
+
+[#24]: https://github.com/openstreetmap/id-tagging-schema/issues/24
+[#615]: https://github.com/openstreetmap/id-tagging-schema/issues/615
+[#673]: https://github.com/openstreetmap/id-tagging-schema/pull/673
+[#792]: https://github.com/openstreetmap/id-tagging-schema/pull/792
+[#798]: https://github.com/openstreetmap/id-tagging-schema/issues/798
+[#800]: https://github.com/openstreetmap/id-tagging-schema/pull/800
+[#803]: https://github.com/openstreetmap/id-tagging-schema/pull/803
+[#805]: https://github.com/openstreetmap/id-tagging-schema/pull/805
+[#807]: https://github.com/openstreetmap/id-tagging-schema/pull/807
+[#810]: https://github.com/openstreetmap/id-tagging-schema/pull/810
+[#811]: https://github.com/openstreetmap/id-tagging-schema/pull/811
+[#812]: https://github.com/openstreetmap/id-tagging-schema/pull/812
+[#813]: https://github.com/openstreetmap/id-tagging-schema/pull/813
+[#814]: https://github.com/openstreetmap/id-tagging-schema/pull/814
+[#815]: https://github.com/openstreetmap/id-tagging-schema/pull/815
+[#817]: https://github.com/openstreetmap/id-tagging-schema/pull/817
+[#821]: https://github.com/openstreetmap/id-tagging-schema/pull/821
+[#822]: https://github.com/openstreetmap/id-tagging-schema/pull/822
+[#823]: https://github.com/openstreetmap/id-tagging-schema/pull/823
+[#825]: https://github.com/openstreetmap/id-tagging-schema/pull/825
+[#827]: https://github.com/openstreetmap/id-tagging-schema/pull/827
+[#829]: https://github.com/openstreetmap/id-tagging-schema/pull/829
+[#830]: https://github.com/openstreetmap/id-tagging-schema/pull/830
+[#836]: https://github.com/openstreetmap/id-tagging-schema/pull/836
+[#839]: https://github.com/openstreetmap/id-tagging-schema/pull/839
+[#840]: https://github.com/openstreetmap/id-tagging-schema/pull/840
+[#841]: https://github.com/openstreetmap/id-tagging-schema/pull/841
+[#843]: https://github.com/openstreetmap/id-tagging-schema/pull/843
+[#844]: https://github.com/openstreetmap/id-tagging-schema/pull/844
+[#848]: https://github.com/openstreetmap/id-tagging-schema/pull/848
+[#849]: https://github.com/openstreetmap/id-tagging-schema/pull/849
+[#851]: https://github.com/openstreetmap/id-tagging-schema/issues/851
+[#852]: https://github.com/openstreetmap/id-tagging-schema/pull/852
+[#853]: https://github.com/openstreetmap/id-tagging-schema/pull/853
+[@tognee]: https://github.com/tognee
+[@emersonveenstra]: https://github.com/emersonveenstra
+[@tiptoptom]: https://github.com/tiptoptom
+
+
+# 6.0.0
+##### 2023-Mar-02
 
 #### Schema Changes
 * Upgrade to the schema-builder [version 6](https://github.com/ideditor/schema-builder/blob/main/CHANGELOG.md#600)
@@ -30,22 +328,55 @@ _Breaking developer changes, which may affect downstream projects or sites that 
   * Allows to specify icons for values of combo fields
 #### New Presets
 * Add most popular alternative medicine practitioners ([#731], thanks [@westnordost])
+* Add preset for `office=engineer` ([#639], thanks [@kjonosm])
+* Add preset for `shop=nuts` ([#774], thanks [@kjonosm])
+* Add preset for `entrance=staircase` ([#228], thanks [@kjonosm])
+* Add preset for `railway=turntable` ([#783], thanks [@k-yle])
+* Add preset for "other" advertising devices
+* Add Senior Assisted Living Facility preset ([#787], thanks [@arch0345])
+* Add presets for specific Street Cabinets
+* Add presets for Psychiatrist and Child Psychiatrist
+* Add preset for Depots (`industrial=depot`) ([#784], thanks [@k-yle])
+* Add preset for `amenity=stripclub` ([#648], thanks [@EvanCarroll])
+* Add preset for Dialysis Center ([#795], thanks [@arch0345])
 #### Changed Presets
 * Make natural wood points unsearchable ([#755], thanks [@arch0345])
 * Rename `attraction=big_wheel` to Ferris Wheel
-* Use Rötgen icons for crane types
+* Use Rötgen icons for presets of: Cranes, Diving Platform, City Limit Sign, Turning Loop, (Water) Slide
 * Allow to specify Therapist offices more precisely by adding `healthcare` fields
 * Add `crossing:markings=yes` as the default value to any newly created Marked Crossings (leave existing objects with `crossing=uncontrolled` as they are)
+* Offer the `bunker_type` field also on the (hidden) `building=bunker` preset
+* Add `ref` field to Sports Pitch preset ([#766], thanks [@arch0345])
+* Include additional fields on the Rest Area preset ([#773], thanks [@kjonosm])
+* Move `access_simple` to main fields for AEDs ([#786], thanks [@FloEdelmann])
+* Don't warn when `landuse=industrial` is mapped as a point ([#776], thanks [@Lonerat])
+* Allow Cemeteries to be mapped as points
+* Add terms (polo/rodeo) for `sport=equestrian` preset ([#780], thanks [@arch0345])
+* Allow "Totem" and "Poser Box" advertising presets to be mapped as a line ([#785], thanks [@k-yle])
+* Rename `shop=pet_grooming` preset to Pet Groomer ([#790], thanks [@matkoniecz])
 #### New and Changed Fields
 * Switch type of various fields to `date`: `check_date`, `opening_date`, `start_date`, `survey:date`, `wreck:date_sunk`
-* Add translatable strings for the fields `substance` ([#737]), `material` ([#735]), `memorial` ([#734]), `barrier type` ([#709]), `archaeological_site` ([#707]), `bath:type` ([#742]), `sport` ([#747]), `attraction` ([#756]), `waste` ([#758]), `office` ([#761]), `resource` ([#760]) (thanks [@kjonosm])
+* Add translatable strings for the fields `substance` ([#737]), `material` ([#735]), `memorial` ([#734]), `barrier type` ([#709]), `archaeological_site` ([#707]), `bath:type` ([#742]), `sport` ([#747]), `attraction` ([#756]), `waste` ([#758]), `office` ([#761]), `resource` ([#760]), `clothes` ([#763]), `building` ([#764]) (thanks [@kjonosm])
 * Add fields for `parking:both|left|right` and `parking:both|left|right:orientation` ([#744])
 * Add more options to the `parking` field: `on_kerb`, `half_on_kerb` and `shoulder` ([#672])
 * Add field for `lift_gate:type` ([#711], thanks [@arch0345])
 * Add fields `tents`, `caravans`, `static_caravans`, `picnic_table`, and `nudism` to Camp Site preset ([#749], [#750], [#750], [#751], [#752], thanks [@kjonosm])
-* Use Rötgen icons for crane types
+* Use Rötgen icons for fields `crane:type`, `leaf_type`, `design` (of power poles and towers), `traffic_calming`, `volcano:type`, `volcano:status` and `tower:construction`
 * Specify icons for crossing markings
+* Add regional and universal field for `ref:linz:place_id` ([#781], thanks [@k-yle])
+* Add `message` field for advertising presets ([#785], thanks [@k-yle])
+#### Deprecated Tags
+* Upgrade most values of the ~~`street_cabinet`~~ subtag to use `utility` instead ([#777], thanks [@kjonosm]) and hide `street_cabinet` field
+* Deprecate value `none` of Cycleway tags ([#796], thanks [@Dimitar5555])
+#### Documentation and Other Changes
+* Add Railway Route to Routes category ([#782], thanks [@k-yle])
+* Add a link to the page with the list of projects which use this repository to the readme ([#802])
 
+
+[#228]: https://github.com/openstreetmap/id-tagging-schema/issues/228
+[#639]: https://github.com/openstreetmap/id-tagging-schema/issues/639
+[#648]: https://github.com/openstreetmap/id-tagging-schema/pull/648
+[#670]: https://github.com/openstreetmap/id-tagging-schema/issues/670
 [#672]: https://github.com/openstreetmap/id-tagging-schema/pull/672
 [#707]: https://github.com/openstreetmap/id-tagging-schema/pull/707
 [#709]: https://github.com/openstreetmap/id-tagging-schema/pull/709
@@ -67,6 +398,27 @@ _Breaking developer changes, which may affect downstream projects or sites that 
 [#758]: https://github.com/openstreetmap/id-tagging-schema/pull/758
 [#760]: https://github.com/openstreetmap/id-tagging-schema/pull/760
 [#761]: https://github.com/openstreetmap/id-tagging-schema/pull/761
+[#763]: https://github.com/openstreetmap/id-tagging-schema/pull/763
+[#764]: https://github.com/openstreetmap/id-tagging-schema/pull/764
+[#766]: https://github.com/openstreetmap/id-tagging-schema/pull/766
+[#773]: https://github.com/openstreetmap/id-tagging-schema/pull/773
+[#774]: https://github.com/openstreetmap/id-tagging-schema/pull/774
+[#776]: https://github.com/openstreetmap/id-tagging-schema/pull/776
+[#777]: https://github.com/openstreetmap/id-tagging-schema/pull/777
+[#780]: https://github.com/openstreetmap/id-tagging-schema/pull/780
+[#781]: https://github.com/openstreetmap/id-tagging-schema/pull/781
+[#782]: https://github.com/openstreetmap/id-tagging-schema/pull/782
+[#783]: https://github.com/openstreetmap/id-tagging-schema/pull/783
+[#784]: https://github.com/openstreetmap/id-tagging-schema/pull/784
+[#785]: https://github.com/openstreetmap/id-tagging-schema/pull/785
+[#786]: https://github.com/openstreetmap/id-tagging-schema/pull/786
+[#787]: https://github.com/openstreetmap/id-tagging-schema/pull/787
+[#790]: https://github.com/openstreetmap/id-tagging-schema/pull/790
+[#795]: https://github.com/openstreetmap/id-tagging-schema/pull/795
+[#796]: https://github.com/openstreetmap/id-tagging-schema/pull/796
+[#802]: https://github.com/openstreetmap/id-tagging-schema/pull/802
+[@Lonerat]: https://github.com/Lonerat
+[@UKChris-osm]: https://github.com/UKChris-osm
 
 
 # 5.2.1
@@ -276,6 +628,10 @@ _Breaking developer changes, which may affect downstream projects or sites that 
 * Make `recycling:*` field case sensitive
 * Add strings for power generation Source and Method fields ([#624])
 * Drop default value `yes` from the `dispensing` field ([#627])
+* Add field for `post_box:type` ([#804], thanks[@UKChris-osm])
+#### Regional Presets and Fields
+* Add regional preset for Post Boxes in the UK, adding a field for `royal_cypher` ([#804], thanks[@UKChris-osm])
+* Only show `drive_through` by default for Post Boxes which are in the US
 #### Bugfixes
 * Describe `tracktype=grade1` as paved only ([#583], thanks [@matkoniecz])
 * Allow Water Slides to be mapped as points (and disallow them to be areas) ([#612])
